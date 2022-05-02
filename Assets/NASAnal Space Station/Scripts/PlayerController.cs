@@ -6,6 +6,8 @@ namespace NASAnalSpaceStation
 
     public class PlayerController : MonoBehaviour
     {
+
+
         // set up movement variables
         [Header("Movement")]
         // set speed
@@ -38,18 +40,32 @@ namespace NASAnalSpaceStation
         }
 
         private void Update(){
-            isGrounded = Physics.Raycast(transform.position, Vector3.down, 0.2f);
+
+            RaycastHit hit;
+            if(Physics.Raycast(transform.position, Vector3.down, out hit, 10.0f))
+            {
+                isGrounded = true;
+    
+                Debug.Log(hit.transform.gameObject.name);
+            }
+            else
+            {
+
+                isGrounded = false;
+            }
             Debug.Log(isGrounded);
+
 
             // Call MyInput function
             MyInput();
 
             // call ControlDrag Function
             ControlDrag();
-
-            if (Input.GetKeyDown("Jump") && isGrounded)
+ 
+            if (Input.GetButtonDown("Jump") && isGrounded == true)
             {
                 Jump();
+                Debug.Log("jumped");
             }
         }
 

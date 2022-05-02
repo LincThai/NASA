@@ -11,8 +11,10 @@ namespace NASAnalSpaceStation
         // Set Variables
         public float mouseSensitivity = 100f;
 
+        // reference to player
         public Transform playerBody;
 
+        // rotation value
         float xRotation = 0f;
 
         #endregion
