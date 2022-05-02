@@ -7,6 +7,7 @@ namespace NASAnalSpaceStation
     public class PlayerController : MonoBehaviour
     {
 
+        #region Fields
 
         // set up movement variables
         [Header("Movement")]
@@ -32,29 +33,25 @@ namespace NASAnalSpaceStation
         // variable to assign the riid body to
         Rigidbody rb;
 
+        #endregion
+
+        #region Unity Methods
+
         private void Start()
         {
             // assigns the rigid body to rb
             rb = GetComponent<Rigidbody>();
+            
+            // freeze rotation of player so does not topple over
             rb.freezeRotation = true;
         }
 
-        private void Update(){
+        private void Update()
+        {
 
-            RaycastHit hit;
-            if(Physics.Raycast(transform.position, Vector3.down, out hit, 10.0f))
-            {
-                isGrounded = true;
-    
-                Debug.Log(hit.transform.gameObject.name);
-            }
-            else
-            {
+            isGrounded = Physics.Raycast(transform.position, Vector3.down, 2.5f);
 
-                isGrounded = false;
-            }
             Debug.Log(isGrounded);
-
 
             // Call MyInput function
             MyInput();
@@ -69,7 +66,18 @@ namespace NASAnalSpaceStation
             }
         }
 
-        void MyInput(){
+        private void FixedUpdate()
+        {
+            // call MovePlayer function
+            MovePlayer();
+        }
+
+        #endregion
+
+        #region Methods
+
+        void MyInput()
+        {
             // collect input data
             horizontalMove = Input.GetAxisRaw("Horizontal");
             verticalMove = Input.GetAxisRaw("Vertical");
@@ -83,18 +91,17 @@ namespace NASAnalSpaceStation
             rb.AddForce(transform.up * JumpForce, ForceMode.Impulse);
         }
 
-        void ControlDrag(){
+        void ControlDrag()
+        {
             rb.drag = rbDrag;
         }
 
-        private void FixedUpdate(){
-            // call MovePlayer function
-            MovePlayer();
-        }
-
-        void MovePlayer(){
+        void MovePlayer()
+        {
             // add a normalized force multiplied by the movement speed as an acceleration
             rb.AddForce(moveDirection.normalized * moveSpeed, ForceMode.Acceleration);
         }
+
+        #endregion
     }
 }
