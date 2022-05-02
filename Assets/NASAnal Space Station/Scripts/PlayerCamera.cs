@@ -17,6 +17,9 @@ namespace NASAnalSpaceStation
         // rotation value
         float xRotation = 0f;
 
+        //reference to game Manager
+        GameManager gameManager;
+
         #endregion
 
         #region Unity Methods
