@@ -29,6 +29,9 @@ namespace NASAnalSpaceStation
         {
             // Locks cursor to center of screen and hides
             Cursor.lockState = CursorLockMode.Locked;
+
+            //
+            gameManager = GameObject.FindWithTag("GameController").GetComponent<GameManager>();
         }
 
         // Update is called once per frame
@@ -48,10 +51,10 @@ namespace NASAnalSpaceStation
             // rotate the body with the camera for left and right rotation
             playerBody.Rotate(Vector3.up * mouseX);
 
-            //if(playerState == )
-            //{
-            //playerBody.Rotate(Vector3.right * MouseY)
-            //}
+            if(gameManager.playerState == zeroGravity)
+            {
+                playerBody.Rotate(Vector3.right * mouseY);
+            }
         }
 
         #endregion
