@@ -33,6 +33,10 @@ namespace NASAnalSpaceStation
         // variable to assign the riid body to
         Rigidbody rb;
 
+        [Header("Zero-Gravity")]
+        // Gravity Check
+        public bool hasGravity;
+
         #endregion
 
         #region Unity Methods
@@ -44,10 +48,21 @@ namespace NASAnalSpaceStation
             
             // freeze rotation of player so does not topple over
             rb.freezeRotation = true;
+
+            // Gravity always starts true
+            hasGravity = true;
         }
 
         private void Update()
         {
+            if(hasGravity == false)
+            {
+                rb.useGravity = false;
+            }
+            else
+            {
+                rb.useGravity = true;
+            }
 
             isGrounded = Physics.Raycast(transform.position, Vector3.down, 2.5f);
 

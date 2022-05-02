@@ -24,6 +24,7 @@ namespace NASAnalSpaceStation
         // Start is called before the first frame update
         void Start()
         {
+            // Locks cursor to center of screen and hides
             Cursor.lockState = CursorLockMode.Locked;
         }
 
@@ -44,6 +45,10 @@ namespace NASAnalSpaceStation
             // rotate the body with the camera for left and right rotation
             playerBody.Rotate(Vector3.up * mouseX);
 
+            //if(playerState == )
+            //{
+            //playerBody.Rotate(Vector3.right * MouseY)
+            //}
         }
 
         #endregion
