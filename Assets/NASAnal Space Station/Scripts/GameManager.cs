@@ -23,7 +23,10 @@ namespace NASAnalSpaceStation
         // Update is called once per frame
         void Update()
         {
-
+            if(Input.GetKey(KeyCode.G))
+            {
+                playerState = PlayerState.zeroGravity;
+            }
         }
     }
     public enum GameState { preGame, game, dead, Pause }
