@@ -10,12 +10,14 @@ namespace NASAnalSpaceStation
 
         // Set Variables
         public GameState gameState;
+        public PlayerState playerState;
 
         #endregion
         // Start is called before the first frame update
         void Start()
         {
             gameState = GameState.preGame;
+            playerState = PlayerState.gravity;
         }
 
         // Update is called once per frame
