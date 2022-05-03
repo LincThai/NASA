@@ -26,7 +26,7 @@ namespace NASAnalSpaceStation
         // Update is called once per frame
         void Update()
         {
-            if(Input.GetKey(KeyCode.G))
+            if(Input.GetKeyDown(KeyCode.G))
             {
                 playerState = PlayerState.zeroGravity;
             }
