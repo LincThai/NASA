@@ -30,7 +30,7 @@ namespace NASAnalSpaceStation
             // Locks cursor to center of screen and hides
             Cursor.lockState = CursorLockMode.Locked;
 
-            //
+            // get reference the game manager script via the object tagged "GameController"
             gameManager = GameObject.FindWithTag("GameController").GetComponent<GameManager>();
         }
 
@@ -51,7 +51,7 @@ namespace NASAnalSpaceStation
             // rotate the body with the camera for left and right rotation
             playerBody.Rotate(Vector3.up * mouseX);
 
-            if(gameManager.playerState == zeroGravity)
+            if(gameManager.playerState == PlayerState.zeroGravity)
             {
                 playerBody.Rotate(Vector3.right * mouseY);
             }
