@@ -37,6 +37,9 @@ namespace NASAnalSpaceStation
         // Gravity Check
         public bool hasGravity;
 
+        // reference to gameManager
+        GameManager gameManager;
+
         #endregion
 
         #region Unity Methods
@@ -49,35 +52,50 @@ namespace NASAnalSpaceStation
             // freeze rotation of player so does not topple over
             rb.freezeRotation = true;
 
+            // Set original value of drag
+            float rbDragOrigin = rbDrag;
+
+            // reset drag value
+            rbDrag = 2f;
+
             // Gravity always starts true
             hasGravity = true;
+
+            // get reference the game manager script via the object tagged "GameController"
+            gameManager = GameObject.FindWithTag("GameController").GetComponent<GameManager>();
         }
 
         private void Update()
         {
+            // call gravity switch function
+            GravitySwitch();
+
+            // check if the value of hasGravity bool is true or false
             if(hasGravity == false)
             {
+                // switch rigidbody gravity off
                 rb.useGravity = false;
             }
             else
             {
+                // switch rigidbody gravity on
                 rb.useGravity = true;
             }
 
+            // send a physics raycast downward by 2.5m to check for ground to set the value of isGrounded
             isGrounded = Physics.Raycast(transform.position, Vector3.down, 2.5f);
-
-            Debug.Log(isGrounded);
 
             // Call MyInput function
             MyInput();
 
             // call ControlDrag Function
             ControlDrag();
- 
+            
+            // Checks for jump button input
             if (Input.GetButtonDown("Jump") && isGrounded == true)
             {
+                // call jump function
                 Jump();
-                Debug.Log("jumped");
             }
         }
 
@@ -91,7 +109,7 @@ namespace NASAnalSpaceStation
 
         #region Methods
 
-        void MyInput()
+        public void MyInput()
         {
             // collect input data
             horizontalMove = Input.GetAxisRaw("Horizontal");
@@ -101,20 +119,38 @@ namespace NASAnalSpaceStation
             moveDirection = transform.forward * verticalMove + transform.right * horizontalMove;
         }
 
-        void Jump()
+        public void Jump()
         {
+            // adds a one time upward force
             rb.AddForce(transform.up * JumpForce, ForceMode.Impulse);
         }
 
-        void ControlDrag()
+        public void ControlDrag()
         {
+            // changes the drag value on the rigid body
             rb.drag = rbDrag;
         }
 
-        void MovePlayer()
+        public void MovePlayer()
         {
             // add a normalized force multiplied by the movement speed as an acceleration
             rb.AddForce(moveDirection.normalized * moveSpeed, ForceMode.Acceleration);
+        }
+
+        public void GravitySwitch()
+        {
+            // check if playerState equals zeroGravity
+            if(gameManager.playerState == PlayerState.zeroGravity)
+            {
+                //has gravity becomes false
+                hasGravity = false;
+            }
+            // Check if playerState equals gravity
+            if(gameManager.playerState != PlayerState.gravity)
+            {
+                // has gravity becomes true
+                hasGravity = true; 
+            }
         }
 
         #endregion

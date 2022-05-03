@@ -13,6 +13,9 @@ namespace NASAnalSpaceStation
         public PlayerState playerState;
 
         #endregion
+
+        #region Unity Methods
+
         // Start is called before the first frame update
         void Start()
         {
@@ -28,6 +31,8 @@ namespace NASAnalSpaceStation
                 playerState = PlayerState.zeroGravity;
             }
         }
+
+        #endregion
     }
     public enum GameState { preGame, game, dead, Pause }
     public enum PlayerState { gravity , zeroGravity }
