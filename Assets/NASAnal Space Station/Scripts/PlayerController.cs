@@ -92,6 +92,16 @@ namespace NASAnalSpaceStation
                 rb.useGravity = true;
             }
 
+            // check for input
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                transform.Rotate(Vector3.forward * 1f);
+            }
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                transform.Rotate(Vector3.forward * -1f);
+            }
+
             // check if C key is pressed down
             if (Input.GetKeyDown(KeyCode.C))
             {
