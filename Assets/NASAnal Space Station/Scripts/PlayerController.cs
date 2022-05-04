@@ -40,6 +40,16 @@ namespace NASAnalSpaceStation
         // reference to gameManager
         GameManager gameManager;
 
+        [Header("Crouch")]
+        // reference to player's capsule collider
+        CapsuleCollider playerCol;
+
+        // original height
+        float originHeight;
+        // new height
+        public float reducedHeight;
+
+
         #endregion
 
         #region Unity Methods
@@ -52,17 +62,17 @@ namespace NASAnalSpaceStation
             // freeze rotation of player so does not topple over
             rb.freezeRotation = true;
 
-            // Set original value of drag
-            float rbDragOrigin = rbDrag;
-
-            // reset drag value
-            rbDrag = 2f;
-
             // Gravity always starts true
             hasGravity = true;
 
             // get reference the game manager script via the object tagged "GameController"
             gameManager = GameObject.FindWithTag("GameController").GetComponent<GameManager>();
+
+            // get a reference to capsule collider on player
+            playerCol = GetComponent<CapsuleCollider>();
+
+            // set origin height to the height of the capsule collider
+            originHeight = playerCol.height;
         }
 
         private void Update()
@@ -80,6 +90,29 @@ namespace NASAnalSpaceStation
             {
                 // switch rigidbody gravity on
                 rb.useGravity = true;
+            }
+
+            // check for input
+            if (Input.GetKey(KeyCode.Q))
+            {
+                transform.Rotate(Vector3.forward * 1f);
+            }
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                transform.Rotate(Vector3.forward * -1f);
+            }
+
+            // check if C key is pressed down
+            if (Input.GetKey(KeyCode.C))
+            {
+                // call crouch function
+                Crouch();
+            }
+            // check if C key is let go
+            else if (Input.GetKeyUp(KeyCode.C))
+            {
+                // Call stand Function
+                Stand();
             }
 
             // send a physics raycast downward by 2.5m to check for ground to set the value of isGrounded
@@ -119,6 +152,26 @@ namespace NASAnalSpaceStation
             moveDirection = transform.forward * verticalMove + transform.right * horizontalMove;
         }
 
+        public void Crouch()
+        {
+            // check if player has gravity
+            if(hasGravity == false)
+            {
+                // and a downward force
+                rb.AddForce(transform.up * -JumpForce, ForceMode.Impulse);
+            }
+            else
+            {
+                // Change collider height
+                playerCol.height = reducedHeight;
+            }
+        }
+
+        public void Stand()
+        {
+            playerCol.height = originHeight;
+        }
+
         public void Jump()
         {
             // adds a one time upward force
@@ -144,12 +197,14 @@ namespace NASAnalSpaceStation
             {
                 //has gravity becomes false
                 hasGravity = false;
+                Debug.Log(false);
             }
             // Check if playerState equals gravity
-            if(gameManager.playerState != PlayerState.gravity)
+            else if(gameManager.playerState == PlayerState.gravity)
             {
                 // has gravity becomes true
-                hasGravity = true; 
+                hasGravity = true;
+                Debug.Log(true);
             }
         }
 
