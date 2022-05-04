@@ -93,7 +93,7 @@ namespace NASAnalSpaceStation
             }
 
             // check for input
-            if (Input.GetKeyDown(KeyCode.Q))
+            if (Input.GetKey(KeyCode.Q))
             {
                 transform.Rotate(Vector3.forward * 1f);
             }
@@ -103,7 +103,7 @@ namespace NASAnalSpaceStation
             }
 
             // check if C key is pressed down
-            if (Input.GetKeyDown(KeyCode.C))
+            if (Input.GetKey(KeyCode.C))
             {
                 // call crouch function
                 Crouch();
