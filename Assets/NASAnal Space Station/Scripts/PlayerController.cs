@@ -49,6 +49,13 @@ namespace NASAnalSpaceStation
         // new height
         public float reducedHeight;
 
+        [Header("Sprint")]
+        // new speed when sprinting
+        public float sprintSpeed = 24f;
+        // original walk speed
+        public float walkSpeed = 12f;
+        // speed of acceleration/deceleration from walk to sprint and vice versa
+        public float acceleration = 10f;
 
         #endregion
 
@@ -123,6 +130,9 @@ namespace NASAnalSpaceStation
 
             // call ControlDrag Function
             ControlDrag();
+
+            // call ControlSpeed
+            ControlSpeed();
             
             // Checks for jump button input
             if (Input.GetButtonDown("Jump") && isGrounded == true)
@@ -176,6 +186,18 @@ namespace NASAnalSpaceStation
         {
             // adds a one time upward force
             rb.AddForce(transform.up * JumpForce, ForceMode.Impulse);
+        }
+
+        public void ControlSpeed()
+        {
+            if (Input.GetKey(KeyCode.LeftShift) && isGrounded)
+            {
+                moveSpeed = Mathf.Lerp(moveSpeed, sprintSpeed, acceleration * Time.deltaTime);
+            }
+            else
+            {
+                moveSpeed = Mathf.Lerp(moveSpeed, walkSpeed, acceleration * Time.deltaTime);
+            }
         }
 
         public void ControlDrag()
