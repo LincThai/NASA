@@ -3,6 +3,8 @@ namespace NASAnalSpaceStation
     using System.Collections;
     using System.Collections.Generic;
     using UnityEngine;
+    using TMPro;
+    using UnityEngine.UI;
 
     public class GameManager : MonoBehaviour
     {
@@ -11,6 +13,10 @@ namespace NASAnalSpaceStation
         // Set Variables
         public GameState gameState;
         public PlayerState playerState;
+
+        // Set Text Reference
+        public TextMeshPro timerText;
+        public TextMeshPro toolKitText;
 
         #endregion
 
