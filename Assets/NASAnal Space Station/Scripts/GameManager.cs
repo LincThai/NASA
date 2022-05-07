@@ -14,9 +14,9 @@ namespace NASAnalSpaceStation
         public GameState gameState;
         public PlayerState playerState;
 
-        // Set Text Reference
-        public TextMeshPro timerText;
-        public TextMeshPro toolKitText;
+        // Set Text Reference Variables
+        public TMP_Text timerText;
+        public TMP_Text toolKitText;
 
         #endregion
 

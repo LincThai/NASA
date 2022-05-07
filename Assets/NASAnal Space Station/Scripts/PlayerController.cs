@@ -57,6 +57,11 @@ namespace NASAnalSpaceStation
         // speed of acceleration/deceleration from walk to sprint and vice versa
         public float acceleration = 10f;
 
+        [Header("Inventory")]
+        // set variable for number of toolkits
+        public int noToolKits = 2;
+        public int toolKitLimit
+
         #endregion
 
         #region Unity Methods
@@ -227,6 +232,16 @@ namespace NASAnalSpaceStation
                 // has gravity becomes true
                 hasGravity = true;
                 Debug.Log(true);
+            }
+        }
+
+        public void Inventory()
+        {
+            noToolKits = toolKitLimit;
+
+            if(noToolKits > toolKitLimit)
+            {
+                noToolKits = toolKitLimit;
             }
         }
 
