@@ -60,7 +60,8 @@ namespace NASAnalSpaceStation
         [Header("Inventory")]
         // set variable for number of toolkits
         public int noToolKits = 2;
-        public int toolKitLimit
+        // variable to limit the number of toolkits in inventory per level
+        public int toolKitLimit = 2;
 
         #endregion
 
@@ -85,6 +86,9 @@ namespace NASAnalSpaceStation
 
             // set origin height to the height of the capsule collider
             originHeight = playerCol.height;
+
+            // call ResetInventory
+            ResetInventory();
         }
 
         private void Update()
@@ -237,12 +241,15 @@ namespace NASAnalSpaceStation
 
         public void Inventory()
         {
-            noToolKits = toolKitLimit;
-
             if(noToolKits > toolKitLimit)
             {
-                noToolKits = toolKitLimit;
+                ResetInventory();
             }
+        }
+
+        public void ResetInventory()
+        {
+            noToolKits = toolKitLimit;
         }
 
         #endregion
