@@ -149,6 +149,9 @@ namespace NASAnalSpaceStation
                 // call jump function
                 Jump();
             }
+
+            // call inventory
+            Inventory();
         }
 
         private void FixedUpdate()
@@ -241,14 +244,17 @@ namespace NASAnalSpaceStation
 
         public void Inventory()
         {
+            // checks whether the players inventory is grester than the limit for the level
             if(noToolKits > toolKitLimit)
             {
+                // call reset inventory function
                 ResetInventory();
             }
         }
 
         public void ResetInventory()
         {
+            // sets the number of toolkits to the limit
             noToolKits = toolKitLimit;
         }
 

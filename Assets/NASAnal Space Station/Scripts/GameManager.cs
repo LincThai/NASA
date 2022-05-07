@@ -18,6 +18,9 @@ namespace NASAnalSpaceStation
         public TMP_Text timerText;
         public TMP_Text toolKitText;
 
+        // reference to player controller
+        PlayerController playerController;
+
         #endregion
 
         #region Unity Methods
@@ -25,17 +28,25 @@ namespace NASAnalSpaceStation
         // Start is called before the first frame update
         void Start()
         {
+            // set gamestate and playerstate
             gameState = GameState.preGame;
             playerState = PlayerState.gravity;
+
+            // get reference to player controller script
+            playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
         }
 
         // Update is called once per frame
         void Update()
         {
+            //
             if(Input.GetKeyDown(KeyCode.G))
             {
+                // set player state to zero gravity
                 playerState = PlayerState.zeroGravity;
             }
+
+            toolKitText.text = playerController.noToolKits.ToString();
         }
 
         #endregion
