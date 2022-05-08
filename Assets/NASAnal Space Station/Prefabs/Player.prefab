@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4667260939514514748}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -67,6 +67,12 @@ MonoBehaviour:
   rbDrag: 2
   JumpForce: 20
   hasGravity: 0
+  reducedHeight: 0
+  sprintSpeed: 24
+  walkSpeed: 12
+  acceleration: 10
+  noToolKits: 2
+  toolKitLimit: 2
 --- !u!136 &4667260939514514748
 CapsuleCollider:
   m_ObjectHideFlags: 0

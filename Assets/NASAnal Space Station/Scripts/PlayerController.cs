@@ -49,6 +49,19 @@ namespace NASAnalSpaceStation
         // new height
         public float reducedHeight;
 
+        [Header("Sprint")]
+        // new speed when sprinting
+        public float sprintSpeed = 24f;
+        // original walk speed
+        public float walkSpeed = 12f;
+        // speed of acceleration/deceleration from walk to sprint and vice versa
+        public float acceleration = 10f;
+
+        [Header("Inventory")]
+        // set variable for number of toolkits
+        public int noToolKits = 2;
+        // variable to limit the number of toolkits in inventory per level
+        public int toolKitLimit = 2;
 
         #endregion
 
@@ -73,6 +86,9 @@ namespace NASAnalSpaceStation
 
             // set origin height to the height of the capsule collider
             originHeight = playerCol.height;
+
+            // call ResetInventory
+            ResetInventory();
         }
 
         private void Update()
@@ -123,6 +139,9 @@ namespace NASAnalSpaceStation
 
             // call ControlDrag Function
             ControlDrag();
+
+            // call ControlSpeed
+            ControlSpeed();
             
             // Checks for jump button input
             if (Input.GetButtonDown("Jump") && isGrounded == true)
@@ -130,6 +149,9 @@ namespace NASAnalSpaceStation
                 // call jump function
                 Jump();
             }
+
+            // call inventory
+            Inventory();
         }
 
         private void FixedUpdate()
@@ -178,6 +200,18 @@ namespace NASAnalSpaceStation
             rb.AddForce(transform.up * JumpForce, ForceMode.Impulse);
         }
 
+        public void ControlSpeed()
+        {
+            if (Input.GetKey(KeyCode.LeftShift) && isGrounded)
+            {
+                moveSpeed = Mathf.Lerp(moveSpeed, sprintSpeed, acceleration * Time.deltaTime);
+            }
+            else
+            {
+                moveSpeed = Mathf.Lerp(moveSpeed, walkSpeed, acceleration * Time.deltaTime);
+            }
+        }
+
         public void ControlDrag()
         {
             // changes the drag value on the rigid body
@@ -206,6 +240,22 @@ namespace NASAnalSpaceStation
                 hasGravity = true;
                 Debug.Log(true);
             }
+        }
+
+        public void Inventory()
+        {
+            // checks whether the players inventory is grester than the limit for the level
+            if(noToolKits > toolKitLimit)
+            {
+                // call reset inventory function
+                ResetInventory();
+            }
+        }
+
+        public void ResetInventory()
+        {
+            // sets the number of toolkits to the limit
+            noToolKits = toolKitLimit;
         }
 
         #endregion
