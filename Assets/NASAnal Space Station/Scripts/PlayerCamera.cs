@@ -38,8 +38,8 @@ namespace NASAnalSpaceStation
         void Update()
         {
             // Get Mouse Movement Input multiply by sensitivity and time
-            float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
-            float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
+            float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * 2 * Time.deltaTime;
+            float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * 2 * Time.deltaTime;
 
             // assign mouseY input to a variable for clamping
             xRotation -= mouseY;
