@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5401635434098713735}
   - component: {fileID: 5401635434098713734}
+  - component: {fileID: 8289043417419253668}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: GameController
@@ -45,3 +46,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameState: 0
   playerState: 0
+  timerText: {fileID: 0}
+  toolKitText: {fileID: 0}
+--- !u!114 &8289043417419253668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5401635434098713732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e77dfb1dcc8dfbf408d56c2315db418b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentTime: 0
+  levelTimeLimit: 0
