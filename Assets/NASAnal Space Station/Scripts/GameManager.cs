@@ -1,5 +1,6 @@
 namespace NASAnalSpaceStation
 {
+    using System;
     using System.Collections;
     using System.Collections.Generic;
     using UnityEngine;
@@ -55,6 +56,8 @@ namespace NASAnalSpaceStation
             // display text for number of toolkits
             toolKitText.text = playerController.noToolKits.ToString();
 
+            TimeSpan ts = TimeSpan.FromSeconds(timer.currentTime);
+            timerText.text = String.Format("{0:D2}:{1:D2}", ts.Minutes, ts.Seconds);
 
         }
 
