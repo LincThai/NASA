@@ -56,7 +56,10 @@ namespace NASAnalSpaceStation
             // display text for number of toolkits
             toolKitText.text = playerController.noToolKits.ToString();
 
+            // set Timespan Variable ts and use FromSeconds Function on currentTime Variable
             TimeSpan ts = TimeSpan.FromSeconds(timer.currentTime);
+
+            // write to timerText a string formatted with Munutes and Seconds
             timerText.text = String.Format("{0:D2}:{1:D2}", ts.Minutes, ts.Seconds);
 
         }
