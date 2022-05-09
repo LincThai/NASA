@@ -21,6 +21,9 @@ namespace NASAnalSpaceStation
         // reference to player controller
         PlayerController playerController;
 
+        // reference to timer
+        GameTimer timer;
+
         #endregion
 
         #region Unity Methods
@@ -34,19 +37,25 @@ namespace NASAnalSpaceStation
 
             // get reference to player controller script
             playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+
+            // refeence timer script
+            timer = GetComponent<GameTimer>();
         }
 
         // Update is called once per frame
         void Update()
         {
-            //
+            // checks for imput and chnages player state
             if(Input.GetKeyDown(KeyCode.G))
             {
                 // set player state to zero gravity
                 playerState = PlayerState.zeroGravity;
             }
 
+            // display text for number of toolkits
             toolKitText.text = playerController.noToolKits.ToString();
+
+
         }
 
         #endregion
