@@ -17,12 +17,22 @@ namespace NASAnalSpaceStation
 
         public void OnTriggerEnter(Collider other)
         {
-            helpText.SetActive(true);
+            // checks if the object that enters is the player
+            if (other.tag == "Player")
+            {
+                // Turn on help text
+                helpText.SetActive(true);
+            }
         }
 
         public void OnTriggerExit(Collider other)
         {
-            helpText.SetActive(false);
+            // checks if the object that exits is the player
+            if (other.tag == "Player")
+            {
+                // Turn off help text
+                helpText.SetActive(false);
+            }
         }
 
         #endregion

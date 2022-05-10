@@ -250,6 +250,12 @@ namespace NASAnalSpaceStation
                 // call reset inventory function
                 ResetInventory();
             }
+            // checks if the number of toolkits is below 0 
+            else if(noToolKits < 0)
+            {
+                // return the number of toolkits to zero
+                noToolKits = 0;
+            }
         }
 
         public void ResetInventory()
