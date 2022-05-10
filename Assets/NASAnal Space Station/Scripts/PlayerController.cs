@@ -59,7 +59,7 @@ namespace NASAnalSpaceStation
 
         [Header("Inventory")]
         // set variable for number of toolkits
-        public int noToolKits = 2;
+        public int noToolKits;
         // variable to limit the number of toolkits in inventory per level
         public int toolKitLimit = 2;
 
@@ -238,7 +238,7 @@ namespace NASAnalSpaceStation
             {
                 // has gravity becomes true
                 hasGravity = true;
-                Debug.Log(true);
+
             }
         }
 

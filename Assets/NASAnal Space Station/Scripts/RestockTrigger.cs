@@ -22,10 +22,10 @@ namespace NASAnalSpaceStation
             if (other.tag == "Player")
             {
                 // reference plater controller script
-                playerController = GetComponent<PlayerController>();
-
+                playerController = other.GetComponent<PlayerController>();
+                
                 // check for the fire input button
-                if (Input.GetButtonDown("Fire"))
+                if (Input.GetButtonDown("Fire1"))
                 {
                     // check if number of toolkits equals zero
                     if (playerController.noToolKits == 0)

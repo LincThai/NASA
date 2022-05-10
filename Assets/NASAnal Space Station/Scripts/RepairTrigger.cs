@@ -10,7 +10,7 @@ namespace NASAnalSpaceStation
         
         // set variables
         // reference to repair prefab
-        public GameObject repairPrefab;
+        //public GameObject repairPrefab;
 
         // reference to player controller
         PlayerController playerController;
@@ -28,10 +28,10 @@ namespace NASAnalSpaceStation
             if (other.tag == "Player")
             {
                 // reference plater controller script
-                playerController = GetComponent<PlayerController>();
+                playerController = other.GetComponent<PlayerController>();
 
                 // check for bfire button imput
-                if (Input.GetButtonDown("Fire"))
+                if (Input.GetButtonDown("Fire1"))
                 {
                     // check for that the number of tookits is greater than cost
                     if (playerController.noToolKits >= cost)
