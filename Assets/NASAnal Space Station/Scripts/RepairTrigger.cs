@@ -9,8 +9,10 @@ namespace NASAnalSpaceStation
         #region Fields
         
         // set variables
-        // reference to repair prefab
-        //public GameObject repairPrefab;
+        // reference to lights
+        [Header("Lights")]
+        public GameObject greenRepairedLight;
+        public GameObject redBrokenLight;
 
         // reference to player controller
         PlayerController playerController;
@@ -38,6 +40,10 @@ namespace NASAnalSpaceStation
                     {
                         // deduct cost from noToolKits
                         playerController.noToolKits -= cost;
+
+                        // switch lights
+                        redBrokenLight.SetActive(false);
+                        greenRepairedLight.SetActive(true);
                     }   
                 }
             }
