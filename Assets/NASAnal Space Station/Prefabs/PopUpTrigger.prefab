@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1774001333227894390}
   - component: {fileID: 1774001333227894389}
   - component: {fileID: 1774001333227894388}
+  - component: {fileID: 3111113912958952092}
   m_Layer: 0
   m_Name: PopUpTrigger
   m_TagString: Untagged
@@ -58,3 +59,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   helpText: {fileID: 0}
+--- !u!114 &3111113912958952092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1774001333227894379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 882357b32e1dc224a84b9edfc6af7e2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerColour: {r: 0, g: 0, b: 0, a: 0}
+  triggerWireColour: {r: 0, g: 0, b: 0, a: 0}
