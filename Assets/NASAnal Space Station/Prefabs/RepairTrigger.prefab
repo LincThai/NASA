@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8308422341243426496}
   - component: {fileID: 8308422341243426497}
   - component: {fileID: 4323041043842890262}
+  - component: {fileID: 8142454261836679460}
   m_Layer: 0
   m_Name: RepairTrigger
   m_TagString: Untagged
@@ -57,5 +58,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f38c128fb07a7a4080d08ea407409ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  repairPrefab: {fileID: 0}
-  cost: 0
+  greenRepairedLight: {fileID: 0}
+  redBrokenLight: {fileID: 0}
+  cost: 1
+--- !u!114 &8142454261836679460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8308422341243426498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 882357b32e1dc224a84b9edfc6af7e2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerColour: {r: 0.078389965, g: 1, b: 0.07075471, a: 0}
+  triggerWireColour: {r: 0, g: 0, b: 0, a: 0}
