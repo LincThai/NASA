@@ -1407,6 +1407,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5503878477406760884, guid: 943d9729ad9c9f942801586faa86ce71, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5503878477406760885, guid: 943d9729ad9c9f942801586faa86ce71, type: 3}
       propertyPath: m_Name
       value: RestockTrigger
@@ -1454,6 +1458,42 @@ PrefabInstance:
     - target: {fileID: 5503878477406760887, guid: 943d9729ad9c9f942801586faa86ce71, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8733386764285963696, guid: 943d9729ad9c9f942801586faa86ce71, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8733386764285963696, guid: 943d9729ad9c9f942801586faa86ce71, type: 3}
+      propertyPath: triggerColour.a
+      value: 0.36078432
+      objectReference: {fileID: 0}
+    - target: {fileID: 8733386764285963696, guid: 943d9729ad9c9f942801586faa86ce71, type: 3}
+      propertyPath: triggerColour.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8733386764285963696, guid: 943d9729ad9c9f942801586faa86ce71, type: 3}
+      propertyPath: triggerColour.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8733386764285963696, guid: 943d9729ad9c9f942801586faa86ce71, type: 3}
+      propertyPath: triggerColour.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8733386764285963696, guid: 943d9729ad9c9f942801586faa86ce71, type: 3}
+      propertyPath: triggerWireColour.a
+      value: 0.5019608
+      objectReference: {fileID: 0}
+    - target: {fileID: 8733386764285963696, guid: 943d9729ad9c9f942801586faa86ce71, type: 3}
+      propertyPath: triggerWireColour.b
+      value: 0.21226418
+      objectReference: {fileID: 0}
+    - target: {fileID: 8733386764285963696, guid: 943d9729ad9c9f942801586faa86ce71, type: 3}
+      propertyPath: triggerWireColour.g
+      value: 0.21226418
+      objectReference: {fileID: 0}
+    - target: {fileID: 8733386764285963696, guid: 943d9729ad9c9f942801586faa86ce71, type: 3}
+      propertyPath: triggerWireColour.r
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 943d9729ad9c9f942801586faa86ce71, type: 3}
@@ -1552,6 +1592,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8042413156718477388, guid: c7336e00c9f6a5a49b31ca6808e57432, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 8042413156718477388, guid: c7336e00c9f6a5a49b31ca6808e57432, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 8042413156718477388, guid: c7336e00c9f6a5a49b31ca6808e57432, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -421
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7336e00c9f6a5a49b31ca6808e57432, type: 3}
 --- !u!1001 &8308422340372220203
@@ -1562,15 +1614,11 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4323041043842890262, guid: d29bb36f3548f0b4db2e34277ba784a4, type: 3}
-      propertyPath: cost
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4323041043842890262, guid: d29bb36f3548f0b4db2e34277ba784a4, type: 3}
-      propertyPath: RedBrokenLight
+      propertyPath: redBrokenLight
       value: 
       objectReference: {fileID: 764393409}
     - target: {fileID: 4323041043842890262, guid: d29bb36f3548f0b4db2e34277ba784a4, type: 3}
-      propertyPath: GreenRepairedLight
+      propertyPath: greenRepairedLight
       value: 
       objectReference: {fileID: 952115055}
     - target: {fileID: 8308422341243426496, guid: d29bb36f3548f0b4db2e34277ba784a4, type: 3}
