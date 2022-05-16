@@ -8,7 +8,9 @@ namespace NASAnalSpaceStation
 
     public class SettingsMenu : MonoBehaviour
     {
-        // reerence to audio mixer
+        #region Fields
+
+        // reference to audio mixer
         public AudioMixer audioMixer;
 
         // reference to dropdown menu
@@ -16,6 +18,10 @@ namespace NASAnalSpaceStation
 
         // array of resolutions for the platform
         Resolution[] resolutions;
+
+        #endregion
+
+        #region Unity Methods
 
         void Start()
         {
@@ -57,6 +63,10 @@ namespace NASAnalSpaceStation
             resolutionDropdown.RefreshShownValue();
         }
 
+        #endregion
+
+        #region Methods
+
         public void SetResolution(int resolutionIndex)
         {
             // using the resolution index set in dropdown, look for the resolution to set to this variable resolution
@@ -83,5 +93,7 @@ namespace NASAnalSpaceStation
             // turns on or off fullscreen
             Screen.fullScreen = isFullscreen;
         }
+
+        #endregion
     }
 }
