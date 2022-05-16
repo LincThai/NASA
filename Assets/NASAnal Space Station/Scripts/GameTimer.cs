@@ -35,7 +35,7 @@ namespace NASAnalSpaceStation
         public IEnumerator Timer()
         {
             // while currentTime is greater than 0 complete the following
-            while(currentTime > 0)
+            while (currentTime > 0)
             {
                 // deduct Time.deltaTime from current time
                 currentTime -= Time.deltaTime;

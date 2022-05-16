@@ -1,10 +1,8 @@
 namespace NASAnalSpaceStation
 {
-    using System;
     using System.Collections;
     using System.Collections.Generic;
     using UnityEngine;
-    using TMPro;
 
     public class GameManager : MonoBehaviour
     {
@@ -42,17 +40,23 @@ namespace NASAnalSpaceStation
         {
             if (gameState == GameState.game)
             {
-                // checks for imput and chnages player state
-                if(Input.GetKeyDown(KeyCode.G))
+                // checks for imput and changes player state
+                if (Input.GetKeyDown(KeyCode.G))
                 {
                     // set player state to zero gravity
                     playerState = PlayerState.zeroGravity;
+                }
+
+                // checks for the 
+                if (Input.GetKey(KeyCode.Escape))
+                {
+                    gameState = GameState.pause;
                 }
             }
         }
 
         #endregion
     }
-    public enum GameState { preGame, game, dead, Pause }
+    public enum GameState { preGame, game, dead, pause }
     public enum PlayerState { gravity , zeroGravity }
 }

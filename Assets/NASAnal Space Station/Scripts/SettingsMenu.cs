@@ -46,7 +46,7 @@ namespace NASAnalSpaceStation
                 options.Add(option);
 
                 // looks for the current resolution of screen/window
-                if(resolutions[i].width == Screen.width && resolutions[i].height == Screen.height)
+                if (resolutions[i].width == Screen.width && resolutions[i].height == Screen.height)
                 {
                     // sets current resolution idex for display
                     currentResolutionIndex = i;

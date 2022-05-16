@@ -52,7 +52,7 @@ namespace NASAnalSpaceStation
             playerBody.Rotate(Vector3.up * mouseX);
 
             // checks if playerstate is zeroGravity
-            if(gameManager.playerState == PlayerState.zeroGravity)
+            if (gameManager.playerState == PlayerState.zeroGravity)
             {
                 // rotate the body with the camera for up and down
                 playerBody.Rotate(Vector3.right * mouseY);
