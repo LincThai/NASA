@@ -34,7 +34,7 @@ namespace NASAnalSpaceStation
                         playerController.ResetInventory();
                     }
                     // check if the number of toolkits is greater than zero
-                    else if(playerController.noToolKits > 0)
+                    else if (playerController.noToolKits > 0)
                     {
                         // create and int variable which holds the difference between
                         // the limit and the current number of toolkits

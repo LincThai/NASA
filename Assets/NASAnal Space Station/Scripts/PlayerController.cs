@@ -97,7 +97,7 @@ namespace NASAnalSpaceStation
             GravitySwitch();
 
             // check if the value of hasGravity bool is true or false
-            if(hasGravity == false)
+            if (hasGravity == false)
             {
                 // switch rigidbody gravity off
                 rb.useGravity = false;
@@ -177,7 +177,7 @@ namespace NASAnalSpaceStation
         public void Crouch()
         {
             // check if player has gravity
-            if(hasGravity == false)
+            if (hasGravity == false)
             {
                 // and a downward force
                 rb.AddForce(transform.up * -JumpForce, ForceMode.Impulse);
@@ -227,14 +227,14 @@ namespace NASAnalSpaceStation
         public void GravitySwitch()
         {
             // check if playerState equals zeroGravity
-            if(gameManager.playerState == PlayerState.zeroGravity)
+            if (gameManager.playerState == PlayerState.zeroGravity)
             {
                 //has gravity becomes false
                 hasGravity = false;
                 Debug.Log(false);
             }
             // Check if playerState equals gravity
-            else if(gameManager.playerState == PlayerState.gravity)
+            else if (gameManager.playerState == PlayerState.gravity)
             {
                 // has gravity becomes true
                 hasGravity = true;
@@ -245,13 +245,13 @@ namespace NASAnalSpaceStation
         public void Inventory()
         {
             // checks whether the players inventory is grester than the limit for the level
-            if(noToolKits > toolKitLimit)
+            if (noToolKits > toolKitLimit)
             {
                 // call reset inventory function
                 ResetInventory();
             }
             // checks if the number of toolkits is below 0 
-            else if(noToolKits < 0)
+            else if (noToolKits < 0)
             {
                 // return the number of toolkits to zero
                 noToolKits = 0;

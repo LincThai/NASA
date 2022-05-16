@@ -6,22 +6,27 @@ using UnityEngine;
 [ExecuteInEditMode]
 public class TriggerDisplay : MonoBehaviour
 {
+    // set colour variables
     public Color triggerColour;
     public Color triggerWireColour;
 
+    // reference to box collider
     private BoxCollider bc;
 
     private void OnEnable()
     {
+        // reference box collider
         bc = GetComponent<BoxCollider>();
     }
 
     private void OnDrawGizmos()
     {
+        // call RedrawBox function
         RedrawBox();
     }
     private void OnDrawGizmosSelected()
     {
+        // call RedrawBox function
         RedrawBox();
     }
 
