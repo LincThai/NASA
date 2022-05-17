@@ -4,6 +4,7 @@ namespace NASAnalSpaceStation
     using System.Collections.Generic;
     using UnityEngine;
     using UnityEngine.Audio;
+    using UnityEngine.SceneManagement;
     using TMPro;
 
     public class SettingsMenu : MonoBehaviour
@@ -92,6 +93,12 @@ namespace NASAnalSpaceStation
         {
             // turns on or off fullscreen
             Screen.fullScreen = isFullscreen;
+        }
+
+        public void ReturnToPriorScene()
+        {
+            // Loads MainMenu Scene
+            SceneManager.LoadScene("MainMenu");
         }
 
         #endregion

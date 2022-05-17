@@ -3,6 +3,7 @@ namespace NASAnalSpaceStation
     using System.Collections;
     using System.Collections.Generic;
     using UnityEngine;
+    using UnityEngine.SceneManagement;
 
     public class GameManager : MonoBehaviour
     {
@@ -47,10 +48,10 @@ namespace NASAnalSpaceStation
                     playerState = PlayerState.zeroGravity;
                 }
 
-                // checks for the 
-                if (Input.GetKey(KeyCode.Escape))
+                // checks if currenttime is = 0
+                if (timer.currentTime == 0f)
                 {
-                    gameState = GameState.pause;
+                    gameState = GameState.dead;
                 }
             }
         }

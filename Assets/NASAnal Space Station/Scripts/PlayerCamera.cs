@@ -57,6 +57,17 @@ namespace NASAnalSpaceStation
                 // rotate the body with the camera for up and down
                 playerBody.Rotate(Vector3.right * mouseY);
             }
+
+            if (gameManager.gameState == GameState.pause)
+            {
+                // confines cursor to window/screem
+                Cursor.lockState = CursorLockMode.Confined;
+            }
+            else if (gameManager.gameState == GameState.game)
+            {
+                // Locks cursor to center of screen and hides
+                Cursor.lockState = CursorLockMode.Locked;
+            }
         }
 
         #endregion
