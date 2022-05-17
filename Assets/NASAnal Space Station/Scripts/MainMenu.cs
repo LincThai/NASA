@@ -21,7 +21,7 @@ namespace NASAnalSpaceStation
             // get refernece to game manager script
             gameManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
 
-            // Set GaneState to preGame
+            // Set GameState to preGame
             gameManager.gameState = GameState.preGame;
         }
 
@@ -36,6 +36,12 @@ namespace NASAnalSpaceStation
 
             // set GameState to game
             gameManager.gameState = GameState.game;
+        }
+
+        public void LoadSettings()
+        {
+            // load SettingsMenu scene
+            SceneManager.LoadScene("SettingsMenu");
         }
 
         public void QuitGame()

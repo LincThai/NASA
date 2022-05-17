@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/NASAnal Space Station/Scenes/Main Scenes/MainLevel_01.unity
     guid: 84d2318b30181be4380c7ed6d8f995a4
+  - enabled: 1
+    path: Assets/NASAnal Space Station/Scenes/Main Scenes/SettingsMenu.unity
+    guid: cca887ceaeb2cad42823ed6f6b4da3c8
   m_configObjects: {}
