@@ -97,6 +97,7 @@ namespace NASAnalSpaceStation
 
         public void ReturnToPriorScene()
         {
+            // Loads MainMenu Scene
             SceneManager.LoadScene("MainMenu");
         }
 

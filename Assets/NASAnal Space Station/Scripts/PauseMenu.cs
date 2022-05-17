@@ -13,7 +13,7 @@ namespace NASAnalSpaceStation
 
         public GameObject pauseMenuUI;
 
-        public GameManager gameManager;
+        GameManager gameManager;
 
         #endregion
 
@@ -21,7 +21,7 @@ namespace NASAnalSpaceStation
         // Start is called before the first frame update
         void Start()
         {
-              gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+              gameManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
         }
 
         void Update()

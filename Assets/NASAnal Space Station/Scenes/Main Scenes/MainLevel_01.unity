@@ -253,7 +253,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &33435949
 RectTransform:
   m_ObjectHideFlags: 0
@@ -481,7 +481,7 @@ GameObject:
   - component: {fileID: 680509973}
   - component: {fileID: 680509972}
   m_Layer: 5
-  m_Name: OptionsButton
+  m_Name: MainMenuButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -550,7 +550,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 680509973}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11190626}
+        m_TargetAssemblyTypeName: NASAnalSpaceStation.PauseMenu, Assembly-CSharp
+        m_MethodName: LoadMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &680509973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1001,7 +1013,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1300181730}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11190626}
+        m_TargetAssemblyTypeName: NASAnalSpaceStation.PauseMenu, Assembly-CSharp
+        m_MethodName: Resume
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1300181730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1387,6 +1411,10 @@ PrefabInstance:
     - target: {fileID: 5401635434098713735, guid: 68473aa2771fe4f469a43ff5dac0e1e9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289043417419253668, guid: 68473aa2771fe4f469a43ff5dac0e1e9, type: 3}
+      propertyPath: levelTimeLimit
+      value: 180
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68473aa2771fe4f469a43ff5dac0e1e9, type: 3}
