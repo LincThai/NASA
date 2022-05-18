@@ -111,10 +111,12 @@ namespace NASAnalSpaceStation
             // check for input
             if (Input.GetKey(KeyCode.Q))
             {
+                // rotate clockwise on the z axis
                 transform.Rotate(Vector3.forward * 1f);
             }
             if (Input.GetKeyDown(KeyCode.E))
             {
+                // rotate anti-clockwise on the z axis
                 transform.Rotate(Vector3.forward * -1f);
             }
 
@@ -191,6 +193,7 @@ namespace NASAnalSpaceStation
 
         public void Stand()
         {
+            // change capsule height back to nthe original
             playerCol.height = originHeight;
         }
 
@@ -202,12 +205,15 @@ namespace NASAnalSpaceStation
 
         public void ControlSpeed()
         {
+            // get input
             if (Input.GetKey(KeyCode.LeftShift) && isGrounded)
             {
+                // accerlerate player movement speed to a sprint speed over time
                 moveSpeed = Mathf.Lerp(moveSpeed, sprintSpeed, acceleration * Time.deltaTime);
             }
             else
             {
+                // deccelerate player movement speed to a walk speed over time
                 moveSpeed = Mathf.Lerp(moveSpeed, walkSpeed, acceleration * Time.deltaTime);
             }
         }

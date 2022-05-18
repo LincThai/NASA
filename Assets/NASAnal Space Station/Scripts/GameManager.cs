@@ -32,13 +32,14 @@ namespace NASAnalSpaceStation
             // get reference to player controller script
             playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
 
-            // refeence timer script
+            // reference timer script
             timer = GetComponent<GameTimer>();
         }
 
         // Update is called once per frame
         void Update()
         {
+            // check if the gamestate is game
             if (gameState == GameState.game)
             {
                 // checks for imput and changes player state
@@ -51,6 +52,7 @@ namespace NASAnalSpaceStation
                 // checks if currenttime is = 0
                 if (timer.currentTime == 0f)
                 {
+                    // change gamestate to dead
                     gameState = GameState.dead;
                 }
             }

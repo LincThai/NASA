@@ -13,6 +13,7 @@ namespace NASAnalSpaceStation
         public TMP_Text timerText;
         public TMP_Text toolKitText;
 
+        // reference game manager
         GameManager gameManager;
 
         #endregion
@@ -22,6 +23,7 @@ namespace NASAnalSpaceStation
         // Start is called before the first frame update
         void Start()
         {
+            // get reference to gsame manager script
             gameManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
         }
 
