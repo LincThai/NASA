@@ -18,12 +18,15 @@ namespace NASAnalSpaceStation
         public GameObject losePanel;
         public GameObject winPanel;
 
+        // reference to game manager
+        GameManager gameManager;
+
         #endregion
         
         // Start is called before the first frame update
         void Start()
         {
-            
+            gameManager = GameObject.FindGameObjectWithTag("GameControllet").GetComponent<GameManager>();
         }
 
         // Update is called once per frame
