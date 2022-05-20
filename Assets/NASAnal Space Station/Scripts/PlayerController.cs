@@ -63,6 +63,12 @@ namespace NASAnalSpaceStation
         // variable to limit the number of toolkits in inventory per level
         public int toolKitLimit = 2;
 
+        [Header("Systems")]
+        // number of systems that have been repaired
+        public int repairedSystems;
+        // number of systems to repair
+        public int systemsToRepair;
+
         #endregion
 
         #region Unity Methods
