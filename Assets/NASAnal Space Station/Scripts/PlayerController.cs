@@ -93,6 +93,12 @@ namespace NASAnalSpaceStation
             // set origin height to the height of the capsule collider
             originHeight = playerCol.height;
 
+            // call GameSetup
+            GameSetup();
+
+            // call ResetSystems
+            ResetSystems();
+            
             // call ResetInventory
             ResetInventory();
         }
@@ -274,6 +280,19 @@ namespace NASAnalSpaceStation
         {
             // sets the number of toolkits to the limit
             noToolKits = toolKitLimit;
+        }
+
+        public void GameSetup()
+        {
+            // toolkitlimit gets its value from the level manager which holds all info for the level
+            toolKitLimit = gameManager.levelManager.toolKitLimit;
+            // systemsToRepair gets its value from the level manager which holds all info for the level
+            systemsToRepair = gameManager.levelManager.numberOfSystems;
+        }
+
+        public void ResetSystems()
+        {
+            repairedSystems = 0;
         }
 
         #endregion

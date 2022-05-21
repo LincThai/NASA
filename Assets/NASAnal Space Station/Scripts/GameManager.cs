@@ -19,6 +19,8 @@ namespace NASAnalSpaceStation
         // reference to timer
         public GameTimer timer;
 
+        public LevelManager levelManager;
+
         #endregion
 
         #region Unity Methods
@@ -32,8 +34,11 @@ namespace NASAnalSpaceStation
             // get reference to player controller script
             playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
 
-            // reference timer script
+            // get reference timer script
             timer = GetComponent<GameTimer>();
+
+            // get reference to LevelManager script
+            levelManager = GameObject.FindGameObjectWithTag("LevelManager").GetComponent<LevelManager>();
         }
 
         // Update is called once per frame

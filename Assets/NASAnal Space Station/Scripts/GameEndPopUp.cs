@@ -26,6 +26,7 @@ namespace NASAnalSpaceStation
         // Start is called before the first frame update
         void Start()
         {
+            // reference to GameManager Script
             gameManager = GameObject.FindGameObjectWithTag("GameControllet").GetComponent<GameManager>();
         }
 
