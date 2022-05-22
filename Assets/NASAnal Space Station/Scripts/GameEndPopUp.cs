@@ -35,7 +35,7 @@ namespace NASAnalSpaceStation
         // Update is called once per frame
         void Update()
         {
-            
+            ChangeEndText();
         }
 
         #endregion
@@ -44,7 +44,15 @@ namespace NASAnalSpaceStation
 
         public void ChangeEndText()
         {
-            if ()
+            if (gameManager.playerController.repairedSystems == gameManager.playerController.systemsToRepair)
+            {
+                gameEndText.text = "You Win";
+            }
+
+            else if (gameManager.timer.currentTime <= 0)
+            {
+                gameEndText.text = "You Lose";
+            }
         }
 
         #endregion
