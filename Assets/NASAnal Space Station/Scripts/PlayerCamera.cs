@@ -58,11 +58,13 @@ namespace NASAnalSpaceStation
                 playerBody.Rotate(Vector3.right * mouseY);
             }
 
+            // check if game state is pause
             if (gameManager.gameState == GameState.pause)
             {
                 // confines cursor to window/screem
                 Cursor.lockState = CursorLockMode.Confined;
             }
+            // otherwise check game state is game
             else if (gameManager.gameState == GameState.game)
             {
                 // Locks cursor to center of screen and hides

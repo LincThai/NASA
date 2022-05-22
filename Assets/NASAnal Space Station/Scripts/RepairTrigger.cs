@@ -44,6 +44,12 @@ namespace NASAnalSpaceStation
                         // switch lights
                         redBrokenLight.SetActive(false);
                         greenRepairedLight.SetActive(true);
+
+                        // increase the number of repaired systems by 1
+                        playerController.repairedSystems += 1;
+
+                        // turn off trigger game object.
+                        gameObject.SetActive(false);
                     }   
                 }
             }

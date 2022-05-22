@@ -63,6 +63,12 @@ namespace NASAnalSpaceStation
         // variable to limit the number of toolkits in inventory per level
         public int toolKitLimit = 2;
 
+        [Header("Systems")]
+        // number of systems that have been repaired
+        public int repairedSystems;
+        // number of systems to repair
+        public int systemsToRepair;
+
         #endregion
 
         #region Unity Methods
@@ -87,6 +93,12 @@ namespace NASAnalSpaceStation
             // set origin height to the height of the capsule collider
             originHeight = playerCol.height;
 
+            // call GameSetup
+            GameSetup();
+
+            // call ResetSystems
+            ResetSystems();
+            
             // call ResetInventory
             ResetInventory();
         }
@@ -111,10 +123,12 @@ namespace NASAnalSpaceStation
             // check for input
             if (Input.GetKey(KeyCode.Q))
             {
+                // rotate clockwise on the z axis
                 transform.Rotate(Vector3.forward * 1f);
             }
             if (Input.GetKeyDown(KeyCode.E))
             {
+                // rotate anti-clockwise on the z axis
                 transform.Rotate(Vector3.forward * -1f);
             }
 
@@ -191,6 +205,7 @@ namespace NASAnalSpaceStation
 
         public void Stand()
         {
+            // change capsule height back to nthe original
             playerCol.height = originHeight;
         }
 
@@ -202,12 +217,15 @@ namespace NASAnalSpaceStation
 
         public void ControlSpeed()
         {
+            // get input
             if (Input.GetKey(KeyCode.LeftShift) && isGrounded)
             {
+                // accerlerate player movement speed to a sprint speed over time
                 moveSpeed = Mathf.Lerp(moveSpeed, sprintSpeed, acceleration * Time.deltaTime);
             }
             else
             {
+                // deccelerate player movement speed to a walk speed over time
                 moveSpeed = Mathf.Lerp(moveSpeed, walkSpeed, acceleration * Time.deltaTime);
             }
         }
@@ -262,6 +280,20 @@ namespace NASAnalSpaceStation
         {
             // sets the number of toolkits to the limit
             noToolKits = toolKitLimit;
+        }
+
+        public void GameSetup()
+        {
+            // toolkitlimit gets its value from the level manager which holds all info for the level
+            toolKitLimit = gameManager.levelManager.toolKitLimit;
+            // systemsToRepair gets its value from the level manager which holds all info for the level
+            systemsToRepair = gameManager.levelManager.numberOfSystems;
+        }
+
+        public void ResetSystems()
+        {
+            // return the number of repaired systems to 0
+            repairedSystems = 0;
         }
 
         #endregion

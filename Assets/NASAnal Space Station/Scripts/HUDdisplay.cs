@@ -12,7 +12,9 @@ namespace NASAnalSpaceStation
         // reference text
         public TMP_Text timerText;
         public TMP_Text toolKitText;
+        public TMP_Text repairedSystemNumber;
 
+        // reference game manager
         GameManager gameManager;
 
         #endregion
@@ -22,6 +24,7 @@ namespace NASAnalSpaceStation
         // Start is called before the first frame update
         void Start()
         {
+            // get reference to gsame manager script
             gameManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
         }
 
@@ -36,6 +39,10 @@ namespace NASAnalSpaceStation
 
             // write to timerText a string formatted with Munutes and Seconds
             timerText.text = String.Format("{0:D2}:{1:D2}", ts.Minutes, ts.Seconds);
+
+            // display the number of repaired systems
+            repairedSystemNumber.text = gameManager.playerController.repairedSystems.ToString() + 
+                "/" + gameManager.playerController.systemsToRepair.ToString();
         }
 
         #endregion

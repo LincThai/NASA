@@ -19,6 +19,8 @@ namespace NASAnalSpaceStation
         // reference to timer
         public GameTimer timer;
 
+        public LevelManager levelManager;
+
         #endregion
 
         #region Unity Methods
@@ -32,13 +34,17 @@ namespace NASAnalSpaceStation
             // get reference to player controller script
             playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
 
-            // refeence timer script
+            // get reference timer script
             timer = GetComponent<GameTimer>();
+
+            // get reference to LevelManager script
+            levelManager = GameObject.FindGameObjectWithTag("LevelManager").GetComponent<LevelManager>();
         }
 
         // Update is called once per frame
         void Update()
         {
+            // check if the gamestate is game
             if (gameState == GameState.game)
             {
                 // checks for imput and changes player state
@@ -51,8 +57,20 @@ namespace NASAnalSpaceStation
                 // checks if currenttime is = 0
                 if (timer.currentTime == 0f)
                 {
+                    // change gamestate to dead
                     gameState = GameState.dead;
                 }
+                else if (playerController.repairedSystems == playerController.systemsToRepair)
+                {
+                    // change gamestate to dead
+                    gameState = GameState.dead;
+                }
+            }
+
+            // checks gamestate
+            if (gameState == GameState.dead)
+            {
+                SceneManager.LoadScene("GameEnd");
             }
         }
 
