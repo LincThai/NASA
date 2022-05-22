@@ -41,7 +41,8 @@ namespace NASAnalSpaceStation
             timerText.text = String.Format("{0:D2}:{1:D2}", ts.Minutes, ts.Seconds);
 
             // display the number of repaired systems
-            repairedSystemNumber.text = gameManager.playerController.repairedSystems.ToString() + "/" + gameManager.playerController.systemsToRepair.ToString();
+            repairedSystemNumber.text = gameManager.playerController.repairedSystems.ToString() + 
+                "/" + gameManager.playerController.systemsToRepair.ToString();
         }
 
         #endregion

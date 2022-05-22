@@ -22,7 +22,9 @@ namespace NASAnalSpaceStation
         GameManager gameManager;
 
         #endregion
-        
+
+        #region Unity Methods
+
         // Start is called before the first frame update
         void Start()
         {
@@ -35,5 +37,17 @@ namespace NASAnalSpaceStation
         {
             
         }
+
+        #endregion
+
+        #region Methods
+
+        public void ChangeEndText()
+        {
+            if ()
+        }
+
+        #endregion
+
     }
 }

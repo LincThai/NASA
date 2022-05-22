@@ -60,6 +60,17 @@ namespace NASAnalSpaceStation
                     // change gamestate to dead
                     gameState = GameState.dead;
                 }
+                else if (playerController.repairedSystems == playerController.systemsToRepair)
+                {
+                    // change gamestate to dead
+                    gameState = GameState.dead;
+                }
+            }
+
+            // checks gamestate
+            if (gameState == GameState.dead)
+            {
+                SceneManager.LoadScene("GameEnd");
             }
         }
 

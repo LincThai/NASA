@@ -292,6 +292,7 @@ namespace NASAnalSpaceStation
 
         public void ResetSystems()
         {
+            // return the number of repaired systems to 0
             repairedSystems = 0;
         }
 
