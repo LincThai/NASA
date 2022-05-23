@@ -9,5 +9,15 @@ namespace NASAnalSpaceStation
         // set variables
         public int toolKitLimit;
         public int numberOfSystems;
+
+        void Start()
+        {
+            
+        }
+
+        private void Update()
+        {
+            DontDestroyOnLoad(gameObject);
+        }
     }
 }
