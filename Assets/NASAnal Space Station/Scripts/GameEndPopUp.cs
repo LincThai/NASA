@@ -3,6 +3,7 @@ namespace NASAnalSpaceStation
     using System.Collections;
     using System.Collections.Generic;
     using UnityEngine;
+    using UnityEngine.SceneManagement;
     using TMPro;
 
     public class GameEndPopUp : MonoBehaviour
@@ -29,7 +30,7 @@ namespace NASAnalSpaceStation
         void Start()
         {
             // reference to GameManager Script
-            gameManager = GameObject.FindGameObjectWithTag("GameControllet").GetComponent<GameManager>();
+            gameManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
         }
 
         // Update is called once per frame
@@ -53,6 +54,17 @@ namespace NASAnalSpaceStation
             {
                 gameEndText.text = "You Lose";
             }
+        }
+
+        public void Quit()
+        {
+            // close game
+            Application.Quit();
+        }
+
+        public void ReturnMainMenu()
+        {
+            SceneManager.LoadScene("MainMenu");
         }
 
         #endregion

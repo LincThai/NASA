@@ -70,6 +70,8 @@ namespace NASAnalSpaceStation
             // checks gamestate
             if (gameState == GameState.dead)
             {
+
+
                 SceneManager.LoadScene("GameEnd");
             }
         }
