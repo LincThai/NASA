@@ -10,6 +10,10 @@ namespace NASAnalSpaceStation
         public int toolKitLimit;
         public int numberOfSystems;
 
+        // variables for game end
+        public int numSystemsRepaired;
+        public int remainingTime;
+
         void Start()
         {
             
@@ -17,6 +21,9 @@ namespace NASAnalSpaceStation
 
         private void Update()
         {
+            remainingTime = ;
+            numberOfSystems = ;
+
             DontDestroyOnLoad(gameObject);
         }
     }
