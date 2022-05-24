@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4578914047538271102}
   - component: {fileID: 586674689907072219}
   - component: {fileID: 3440959899776804881}
+  - component: {fileID: 9011813612476848300}
   m_Layer: 0
   m_Name: Joe_s_SpaceStation_ModKit_X_Section_01
   m_TagString: Untagged
@@ -81,3 +82,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &9011813612476848300
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3801111462703843780}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -441422527421669178, guid: 82f4fb38310666a4a9dc1398ce96fce6, type: 3}
