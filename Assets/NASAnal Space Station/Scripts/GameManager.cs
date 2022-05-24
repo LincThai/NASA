@@ -39,7 +39,7 @@ namespace NASAnalSpaceStation
             gameState = GameState.game;
 
             // get reference to player controller script
-            playerController = GameObject.FindGameObjectWithTag("GameController").GetComponent<PlayerController>();
+            playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
 
             // get reference timer script
             timer = gameObject.GetComponent<GameTimer>();

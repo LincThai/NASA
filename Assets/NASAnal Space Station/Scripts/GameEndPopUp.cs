@@ -31,6 +31,10 @@ namespace NASAnalSpaceStation
         {
             // reference to LevelManager Script
             levelManager = GameObject.FindGameObjectWithTag("LevelManager").GetComponent<LevelManager>();
+
+            // Turn off win and lose panel
+            losePanel.SetActive(false);
+            winPanel.SetActive(false);
         }
 
         // Update is called once per frame
@@ -47,11 +51,13 @@ namespace NASAnalSpaceStation
         {
             if (levelManager.numSystemsRepaired == levelManager.numberOfSystems)
             {
+                winPanel.SetActive(true);
                 gameEndText.text = "You Win";
             }
 
             else if (levelManager.remainingTime <= 0 && levelManager.numSystemsRepaired < levelManager.numberOfSystems)
             {
+                losePanel.SetActive(true);
                 gameEndText.text = "You Lose";
             }
         }
