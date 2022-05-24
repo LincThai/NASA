@@ -15,6 +15,7 @@ namespace NASAnalSpaceStation
 
         // reference to player controller
         public PlayerController playerController;
+        public GameObject player;
 
         // reference to timer
         public GameTimer timer;
@@ -28,17 +29,25 @@ namespace NASAnalSpaceStation
         // Start is called before the first frame update
         void Start()
         {
+            setupManager();
+        }
+
+        public void setupManager()
+        {
             // set playerstate
             playerState = PlayerState.gravity;
+            gameState = GameState.game;
 
             // get reference to player controller script
-            playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+            playerController = GameObject.FindGameObjectWithTag("GameController").GetComponent<PlayerController>();
 
             // get reference timer script
-            timer = GetComponent<GameTimer>();
+            timer = gameObject.GetComponent<GameTimer>();
 
             // get reference to LevelManager script
             levelManager = GameObject.FindGameObjectWithTag("LevelManager").GetComponent<LevelManager>();
+
+
         }
 
         // Update is called once per frame
@@ -55,11 +64,12 @@ namespace NASAnalSpaceStation
                 }
 
                 // checks if currenttime is = 0
-                if (timer.currentTime == 0f)
+                if (timer.currentTime <= 0f)
                 {
                     // change gamestate to dead
                     gameState = GameState.dead;
                 }
+                // checks if player has repaired all systems
                 else if (playerController.repairedSystems == playerController.systemsToRepair)
                 {
                     // change gamestate to dead

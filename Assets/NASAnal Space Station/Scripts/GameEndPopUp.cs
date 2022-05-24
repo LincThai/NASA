@@ -3,6 +3,7 @@ namespace NASAnalSpaceStation
     using System.Collections;
     using System.Collections.Generic;
     using UnityEngine;
+    using UnityEngine.SceneManagement;
     using TMPro;
 
     public class GameEndPopUp : MonoBehaviour
@@ -18,8 +19,8 @@ namespace NASAnalSpaceStation
         public GameObject losePanel;
         public GameObject winPanel;
 
-        // reference to game manager
-        GameManager gameManager;
+        // reference to level manager
+        LevelManager levelManager;
 
         #endregion
 
@@ -28,8 +29,8 @@ namespace NASAnalSpaceStation
         // Start is called before the first frame update
         void Start()
         {
-            // reference to GameManager Script
-            gameManager = GameObject.FindGameObjectWithTag("GameControllet").GetComponent<GameManager>();
+            // reference to LevelManager Script
+            levelManager = GameObject.FindGameObjectWithTag("LevelManager").GetComponent<LevelManager>();
         }
 
         // Update is called once per frame
@@ -44,15 +45,26 @@ namespace NASAnalSpaceStation
 
         public void ChangeEndText()
         {
-            if (gameManager.playerController.repairedSystems == gameManager.playerController.systemsToRepair)
+            if (levelManager.numSystemsRepaired == levelManager.numberOfSystems)
             {
                 gameEndText.text = "You Win";
             }
 
-            else if (gameManager.timer.currentTime <= 0)
+            else if (levelManager.remainingTime <= 0 && levelManager.numSystemsRepaired < levelManager.numberOfSystems)
             {
                 gameEndText.text = "You Lose";
             }
+        }
+
+        public void Quit()
+        {
+            // close game
+            Application.Quit();
+        }
+
+        public void ReturnMainMenu()
+        {
+            SceneManager.LoadScene("MainMenu");
         }
 
         #endregion

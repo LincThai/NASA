@@ -20,6 +20,7 @@ namespace NASAnalSpaceStation
 
         #endregion
 
+        #region Unity Methods
 
         // Start is called before the first frame update
         void Start()
@@ -46,6 +47,10 @@ namespace NASAnalSpaceStation
                 }
             }
         }
+
+        #endregion
+
+        #region Methods
 
         public void Resume()
         {
@@ -77,9 +82,9 @@ namespace NASAnalSpaceStation
             Time.timeScale = 1f;
             // load main menu scene
             SceneManager.LoadScene("MainMenu");
-            // set game state back to pregame
-            gameManager.gameState = GameState.preGame;
         }
+
+        #endregion
 
     }
 }

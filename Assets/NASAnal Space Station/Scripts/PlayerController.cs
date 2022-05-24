@@ -101,6 +101,8 @@ namespace NASAnalSpaceStation
             
             // call ResetInventory
             ResetInventory();
+
+            gameManager.setupManager();
         }
 
         private void Update()

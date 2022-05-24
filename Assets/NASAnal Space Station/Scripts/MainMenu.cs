@@ -7,26 +7,6 @@ namespace NASAnalSpaceStation
 
     public class MainMenu : MonoBehaviour
     {
-        #region Fields
-
-        // variable to reference GameManager
-        GameManager gameManager;
-
-        #endregion
-
-        #region Unity Methods
-
-        public void Start()
-        {
-            // get refernece to game manager script
-            gameManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
-
-            // Set GameState to preGame
-            gameManager.gameState = GameState.preGame;
-        }
-
-        #endregion
-
         #region Methods
 
         public void PlayGame()
@@ -35,7 +15,7 @@ namespace NASAnalSpaceStation
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
             // set GameState to game
-            gameManager.gameState = GameState.game;
+            //gameManager.gameState = GameState.game;
         }
 
         public void LoadSettings()
