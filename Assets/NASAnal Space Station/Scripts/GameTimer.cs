@@ -15,6 +15,9 @@ namespace NASAnalSpaceStation
         // variable of the time limit for a level
         public float levelTimeLimit;
 
+        // reference game Manager
+        GameManager gameManager;
+
         #endregion
 
         #region Unity Methods
@@ -23,10 +26,14 @@ namespace NASAnalSpaceStation
         {
             // resets time for every level
             currentTime = levelTimeLimit;
-
+  
+            // check if game state is game
+            gameManager = GetComponent<GameManager>();
+            
             // Start Timer Coroutine
             StartCoroutine(Timer());
         }
+
 
         #endregion
 
