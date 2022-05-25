@@ -1,18 +1,31 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class Sound : MonoBehaviour
+namespace NASAnalSpaceStation
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    using UnityEngine;
+    using UnityEngine.Audio;
 
-    // Update is called once per frame
-    void Update()
+    [System.Serializable]
+    public class Sound
     {
-        
+        // name variable
+        public string name;
+
+        // audioclip 
+        public AudioClip clip;
+
+
+        // volume
+        [Range(0f, 1f)]
+        public float volume;
+
+        // pitch
+        [Range(.1f, 3f)]
+        public float pitch;
+
+        // loop
+        public bool loop;
+
+        // AudioSource component
+        [HideInInspector]
+        public AudioSource source;
     }
 }
