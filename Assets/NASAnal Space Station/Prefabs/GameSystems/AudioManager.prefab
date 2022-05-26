@@ -48,13 +48,13 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 1bf5ba2a0cb2f6c44b3dbbe6dc29bedd, type: 3}
     volume: 1
     pitch: 0.1
-    loop: 0
+    loop: 1
     source: {fileID: 0}
   - name: Alarm_02
     clip: {fileID: 8300000, guid: a7f505690a1364740a05986412ba738e, type: 3}
     volume: 1
     pitch: 0.1
-    loop: 0
+    loop: 1
     source: {fileID: 0}
   - name: Repaired_01
     clip: {fileID: 8300000, guid: 40c25c9f64cb1954790707b0915e8956, type: 3}
