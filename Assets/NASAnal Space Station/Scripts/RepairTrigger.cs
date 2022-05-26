@@ -20,6 +20,10 @@ namespace NASAnalSpaceStation
         // set variable for cost requirements
         public int cost = 1;
 
+        // string name of sounds
+        string nameOne = "Repaired_01";
+        string nameTwo = "Repaired_02";
+
         #endregion
 
         #region Methods
@@ -31,6 +35,9 @@ namespace NASAnalSpaceStation
             {
                 // reference plater controller script
                 playerController = other.GetComponent<PlayerController>();
+
+                // randomise repaired sound
+                int i = Random.Range(0, 1);
 
                 // check for bfire button imput
                 if (Input.GetButtonDown("Fire1"))
@@ -47,6 +54,17 @@ namespace NASAnalSpaceStation
 
                         // increase the number of repaired systems by 1
                         playerController.repairedSystems += 1;
+
+                        if (i == 0)
+                        {
+                            // play sound
+                            FindObjectOfType<AudioManager>().Play(nameOne);
+                        }
+                        else if (i == 1)
+                        {
+                            // play sound
+                            FindObjectOfType<AudioManager>().Play(nameTwo);
+                        }
 
                         // turn off trigger game object.
                         gameObject.SetActive(false);
