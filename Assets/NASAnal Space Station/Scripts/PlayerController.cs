@@ -115,23 +115,23 @@ namespace NASAnalSpaceStation
             {
                 // switch rigidbody gravity off
                 rb.useGravity = false;
+
+                // check for input
+                if (Input.GetKey(KeyCode.Q))
+                {
+                    // rotate clockwise on the z axis
+                    transform.Rotate(Vector3.forward * 1f);
+                }
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    // rotate anti-clockwise on the z axis
+                    transform.Rotate(Vector3.forward * -1f);
+                }
             }
             else
             {
                 // switch rigidbody gravity on
                 rb.useGravity = true;
-            }
-
-            // check for input
-            if (Input.GetKey(KeyCode.Q))
-            {
-                // rotate clockwise on the z axis
-                transform.Rotate(Vector3.forward * 1f);
-            }
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                // rotate anti-clockwise on the z axis
-                transform.Rotate(Vector3.forward * -1f);
             }
 
             // check if C key is pressed down

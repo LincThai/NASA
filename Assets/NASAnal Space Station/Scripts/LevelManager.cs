@@ -29,7 +29,7 @@ namespace NASAnalSpaceStation
             gameManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
         }
 
-        private void Update()
+        void Update()
         {
             // get data variables
             remainingTime = gameManager.timer.currentTime;
