@@ -29,6 +29,8 @@ namespace NASAnalSpaceStation
         // Start is called before the first frame update
         void Start()
         {
+            Cursor.lockState = CursorLockMode.Confined;
+
             // reference to LevelManager Script
             levelManager = GameObject.FindGameObjectWithTag("LevelManager").GetComponent<LevelManager>();
 

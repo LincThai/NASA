@@ -9028,6 +9028,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1103318598296100270, guid: 059952116b964554084fdb0943cdf885, type: 3}
+      propertyPath: sounds.Array.data[0].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1103318598296100270, guid: 059952116b964554084fdb0943cdf885, type: 3}
+      propertyPath: sounds.Array.data[1].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1103318598296100270, guid: 059952116b964554084fdb0943cdf885, type: 3}
+      propertyPath: sounds.Array.data[2].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1103318598296100270, guid: 059952116b964554084fdb0943cdf885, type: 3}
+      propertyPath: sounds.Array.data[3].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1103318598296100270, guid: 059952116b964554084fdb0943cdf885, type: 3}
+      propertyPath: sounds.Array.data[4].pitch
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1276333544507362023, guid: 059952116b964554084fdb0943cdf885, type: 3}
       propertyPath: m_RootOrder
       value: 0
