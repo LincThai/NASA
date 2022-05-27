@@ -590,10 +590,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 132981395, guid: c02c6716803fe994a9b17299496c19b4, type: 3}
-      propertyPath: Loop
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4667260939514514624, guid: c02c6716803fe994a9b17299496c19b4, type: 3}
       propertyPath: m_Name
       value: Player
@@ -8971,10 +8967,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelManager
       objectReference: {fileID: 0}
-    - target: {fileID: 1756396259739967941, guid: 11b72d00e855b674baac1969d2567a75, type: 3}
-      propertyPath: numberOfSystems
-      value: 11
-      objectReference: {fileID: 0}
     - target: {fileID: 1756396259739967942, guid: 11b72d00e855b674baac1969d2567a75, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -9028,26 +9020,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1103318598296100270, guid: 059952116b964554084fdb0943cdf885, type: 3}
-      propertyPath: sounds.Array.data[0].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1103318598296100270, guid: 059952116b964554084fdb0943cdf885, type: 3}
-      propertyPath: sounds.Array.data[1].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1103318598296100270, guid: 059952116b964554084fdb0943cdf885, type: 3}
-      propertyPath: sounds.Array.data[2].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1103318598296100270, guid: 059952116b964554084fdb0943cdf885, type: 3}
-      propertyPath: sounds.Array.data[3].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1103318598296100270, guid: 059952116b964554084fdb0943cdf885, type: 3}
-      propertyPath: sounds.Array.data[4].pitch
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1276333544507362023, guid: 059952116b964554084fdb0943cdf885, type: 3}
       propertyPath: m_RootOrder
       value: 0
