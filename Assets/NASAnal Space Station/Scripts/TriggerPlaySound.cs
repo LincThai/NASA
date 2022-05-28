@@ -6,7 +6,14 @@ namespace NASAnalSpaceStation
 
     public class TriggerPlaySound : MonoBehaviour
     {
+        #region Fields
+
+        // set string array
         public string[] name;
+
+        #endregion
+
+        #region Methods
 
         void OnTriggerStay(Collider other)
         { 
@@ -20,5 +27,7 @@ namespace NASAnalSpaceStation
                 FindObjectOfType<AudioManager>().Play(name[i]);
             }
         }
+
+        #endregion
     }
 }

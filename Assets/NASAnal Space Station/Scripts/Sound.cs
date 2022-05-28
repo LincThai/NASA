@@ -12,7 +12,6 @@ namespace NASAnalSpaceStation
         // audioclip 
         public AudioClip clip;
 
-
         // volume
         [Range(0f, 1f)]
         public float volume;
