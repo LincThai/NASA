@@ -6,12 +6,19 @@ namespace NASAnalSpaceStation
 
     public class TriggerPlaySound : MonoBehaviour
     {
-        void OnTriggerEnter(Collider other)
-        {
-            if (other.tag == "Player")
+        public string[] name;
+
+        void OnTriggerStay(Collider other)
+        { 
+            // while the tag of other is equal to Player complete the following
+            while(other.tag == "Player")
             {
-                FindObjectOfType<AudioManager>().Play();
-            }   
+                // variable i is equal to a random value from 0 to 2
+                int i = Random.Range(0,2);
+
+                // play sound with the name in array through audiomanager
+                FindObjectOfType<AudioManager>().Play(name[i]);
+            }
         }
     }
 }
