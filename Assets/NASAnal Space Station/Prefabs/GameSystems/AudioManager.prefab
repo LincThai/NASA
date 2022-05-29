@@ -74,13 +74,13 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
-  - name: 
+  - name: Spark_01
     clip: {fileID: 0}
     volume: 0
     pitch: 0
     loop: 0
     source: {fileID: 0}
-  - name: 
+  - name: Spark_02
     clip: {fileID: 0}
     volume: 0
     pitch: 0
