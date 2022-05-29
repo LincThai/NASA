@@ -50,6 +50,18 @@ namespace NASAnalSpaceStation
             }
         }
 
+        public void PlaySoundOverTime()
+        {
+            if (currentTime >= levelTimeLimit / 2)
+            {
+                FindObjectOfType<AudioManager>().Play("Alarm_02");
+            }
+            else if (currentTime <= levelTimeLimit / 2)
+            {
+                FindObjectOfType<AudioManager>().Play("Alarm_01");
+            }
+        }
+
         #endregion
     }
 }

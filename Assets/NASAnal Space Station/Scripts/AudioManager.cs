@@ -6,10 +6,17 @@ namespace NASAnalSpaceStation
 
     public class AudioManager : MonoBehaviour
     {
+        #region Fields
+
         // set array
         public Sound[] sounds;
 
+        // audioManager instance variable
         public static AudioManager instance;
+
+        #endregion
+
+        #region Unity Methods
 
         void Awake()
         {
@@ -49,6 +56,10 @@ namespace NASAnalSpaceStation
             //Play();
         }
 
+        #endregion
+
+        #region Methods
+
         public void Play(string name)
         {
             // assign to s a sound with the same name, that was given to the function
@@ -64,5 +75,7 @@ namespace NASAnalSpaceStation
             // play sound
             s.source.Play();
         }
+
+        #endregion
     }
 }
