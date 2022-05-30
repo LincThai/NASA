@@ -177,7 +177,7 @@ namespace NASAnalSpaceStation
             // call MovePlayer function
             MovePlayer();
 
-            while (moveDirection.x > 0 || moveDirection.z > 0)
+            if (moveDirection.x > 0 || moveDirection.z > 0)
             {
                 PlayerMoveSFX();
             }

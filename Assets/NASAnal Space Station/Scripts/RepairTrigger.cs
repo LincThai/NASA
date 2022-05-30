@@ -37,7 +37,7 @@ namespace NASAnalSpaceStation
                 playerController = other.GetComponent<PlayerController>();
 
                 // randomise repaired sound
-                int i = Random.Range(0, 1);
+                int i = Random.Range(0, 2);
 
                 // check for bfire button imput
                 if (Input.GetButtonDown("Fire1"))
