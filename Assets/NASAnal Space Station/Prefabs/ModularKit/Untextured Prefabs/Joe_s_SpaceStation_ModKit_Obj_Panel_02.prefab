@@ -135,7 +135,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8308422341243426496, guid: d29bb36f3548f0b4db2e34277ba784a4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.14
       objectReference: {fileID: 0}
     - target: {fileID: 8308422341243426496, guid: d29bb36f3548f0b4db2e34277ba784a4, type: 3}
       propertyPath: m_LocalPosition.y
@@ -143,7 +143,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8308422341243426496, guid: d29bb36f3548f0b4db2e34277ba784a4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.4
+      value: 0.40000004
       objectReference: {fileID: 0}
     - target: {fileID: 8308422341243426496, guid: d29bb36f3548f0b4db2e34277ba784a4, type: 3}
       propertyPath: m_LocalRotation.x
@@ -159,7 +159,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8308422341243426497, guid: d29bb36f3548f0b4db2e34277ba784a4, type: 3}
       propertyPath: m_Size.x
-      value: 1.7429718
+      value: 3.522727
       objectReference: {fileID: 0}
     - target: {fileID: 8308422341243426497, guid: d29bb36f3548f0b4db2e34277ba784a4, type: 3}
       propertyPath: m_Size.y
@@ -167,11 +167,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8308422341243426497, guid: d29bb36f3548f0b4db2e34277ba784a4, type: 3}
       propertyPath: m_Size.z
-      value: 2.1506996
+      value: 3.3023186
       objectReference: {fileID: 0}
     - target: {fileID: 8308422341243426497, guid: d29bb36f3548f0b4db2e34277ba784a4, type: 3}
       propertyPath: m_Center.x
-      value: -0.3714859
+      value: -0.4395635
       objectReference: {fileID: 0}
     - target: {fileID: 8308422341243426497, guid: d29bb36f3548f0b4db2e34277ba784a4, type: 3}
       propertyPath: m_Center.y
@@ -179,7 +179,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8308422341243426497, guid: d29bb36f3548f0b4db2e34277ba784a4, type: 3}
       propertyPath: m_Center.z
-      value: 0.57535005
+      value: 1.1511595
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308422341243426497, guid: d29bb36f3548f0b4db2e34277ba784a4, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d29bb36f3548f0b4db2e34277ba784a4, type: 3}
