@@ -8776,6 +8776,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8289043417419253668, guid: 68473aa2771fe4f469a43ff5dac0e1e9, type: 3}
+      propertyPath: levelTimeLimit
+      value: 120
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68473aa2771fe4f469a43ff5dac0e1e9, type: 3}
 --- !u!4 &2098299008 stripped
@@ -9088,6 +9092,18 @@ PrefabInstance:
     - target: {fileID: 1560139956865139630, guid: ebe24d6421dfbb64dbe056ea586ccba8, type: 3}
       propertyPath: m_Name
       value: GameHUD
+      objectReference: {fileID: 0}
+    - target: {fileID: 6089558825447653279, guid: ebe24d6421dfbb64dbe056ea586ccba8, type: 3}
+      propertyPath: m_text
+      value: ITS MORBIN TIME
+      objectReference: {fileID: 0}
+    - target: {fileID: 6089558825447653279, guid: ebe24d6421dfbb64dbe056ea586ccba8, type: 3}
+      propertyPath: m_fontSize
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6089558825447653279, guid: ebe24d6421dfbb64dbe056ea586ccba8, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7611554116330723969, guid: ebe24d6421dfbb64dbe056ea586ccba8, type: 3}
       propertyPath: m_Pivot.x
