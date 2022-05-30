@@ -56,6 +56,8 @@ namespace NASAnalSpaceStation
         public float walkSpeed = 12f;
         // speed of acceleration/deceleration from walk to sprint and vice versa
         public float acceleration = 10f;
+        // bool to check if the player is sprinting or not
+        public bool isSprinting;
 
         [Header("Inventory")]
         // set variable for number of toolkits
@@ -174,6 +176,11 @@ namespace NASAnalSpaceStation
         {
             // call MovePlayer function
             MovePlayer();
+
+            while (moveDirection.x > 0 || moveDirection.z > 0)
+            {
+                PlayerMoveSFX();
+            }
         }
 
         #endregion
@@ -207,7 +214,7 @@ namespace NASAnalSpaceStation
 
         public void Stand()
         {
-            // change capsule height back to nthe original
+            // change capsule height back to the original
             playerCol.height = originHeight;
         }
 
@@ -224,11 +231,13 @@ namespace NASAnalSpaceStation
             {
                 // accerlerate player movement speed to a sprint speed over time
                 moveSpeed = Mathf.Lerp(moveSpeed, sprintSpeed, acceleration * Time.deltaTime);
+                isSprinting = true;
             }
             else
             {
                 // deccelerate player movement speed to a walk speed over time
                 moveSpeed = Mathf.Lerp(moveSpeed, walkSpeed, acceleration * Time.deltaTime);
+                isSprinting = false;
             }
         }
 
@@ -296,6 +305,18 @@ namespace NASAnalSpaceStation
         {
             // return the number of repaired systems to 0
             repairedSystems = 0;
+        }
+
+        public void PlayerMoveSFX()
+        {
+            if (isSprinting)
+            {
+                FindObjectOfType<AudioManager>().Play("Sprint");
+            }
+            else
+            {
+                FindObjectOfType<AudioManager>().Play("Walk");
+            }
         }
 
         #endregion
