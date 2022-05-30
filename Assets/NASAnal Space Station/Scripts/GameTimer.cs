@@ -32,6 +32,8 @@ namespace NASAnalSpaceStation
             
             // Start Timer Coroutine
             StartCoroutine(Timer());
+
+            PlaySoundOverTime();
         }
 
 
@@ -52,13 +54,18 @@ namespace NASAnalSpaceStation
 
         public void PlaySoundOverTime()
         {
-            if (currentTime >= levelTimeLimit / 2)
+            if (currentTime >= levelTimeLimit / 2 )
             {
                 FindObjectOfType<AudioManager>().Play("Alarm_02");
             }
             else if (currentTime <= levelTimeLimit / 2)
             {
+                FindObjectOfType<AudioManager>().Stop("Alarm_02");
                 FindObjectOfType<AudioManager>().Play("Alarm_01");
+            }
+            else if (currentTime <= 0)
+            {
+                FindObjectOfType<AudioManager>().Stop("Alarm_01");
             }
         }
 

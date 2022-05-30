@@ -9,7 +9,7 @@ namespace NASAnalSpaceStation
         #region Fields
 
         // set string array
-        public string[] name;
+        public string[] soundNames;
 
         #endregion
 
@@ -24,7 +24,7 @@ namespace NASAnalSpaceStation
                 int i = Random.Range(0,2);
 
                 // play sound with the name in array through audiomanager
-                FindObjectOfType<AudioManager>().Play(name[i]);
+                FindObjectOfType<AudioManager>().Play(soundNames[i]);
             }
         }
 

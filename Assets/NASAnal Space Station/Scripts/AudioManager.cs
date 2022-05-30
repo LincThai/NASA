@@ -76,6 +76,22 @@ namespace NASAnalSpaceStation
             s.source.Play();
         }
 
+        public void Stop(string name)
+        {
+            // assign to s a sound with the same name, that was given to the function
+            Sound s = Array.Find(sounds, sound => sound.name == name);
+
+            // check if s is equal to null
+            if (s == null)
+            {
+                Debug.LogWarning("Sound: " + name + " not found!");
+                return;
+            }
+
+            // stop sound
+            s.source.Stop();
+        }
+
         #endregion
     }
 }

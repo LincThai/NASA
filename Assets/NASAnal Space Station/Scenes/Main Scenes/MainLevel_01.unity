@@ -594,6 +594,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4667260939514514750, guid: c02c6716803fe994a9b17299496c19b4, type: 3}
+      propertyPath: walkSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 1bf5ba2a0cb2f6c44b3dbbe6dc29bedd, type: 3}
+    - target: {fileID: 4667260939514514750, guid: c02c6716803fe994a9b17299496c19b4, type: 3}
+      propertyPath: sprintSound
+      value: 
+      objectReference: {fileID: 8300000, guid: a7f505690a1364740a05986412ba738e, type: 3}
     - target: {fileID: 4667260939514514751, guid: c02c6716803fe994a9b17299496c19b4, type: 3}
       propertyPath: m_RootOrder
       value: 6
