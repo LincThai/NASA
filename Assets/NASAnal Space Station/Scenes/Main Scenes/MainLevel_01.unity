@@ -594,6 +594,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4667260939514514750, guid: c02c6716803fe994a9b17299496c19b4, type: 3}
+      propertyPath: walkPitchLow
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4667260939514514750, guid: c02c6716803fe994a9b17299496c19b4, type: 3}
+      propertyPath: walkPitchHigh
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4667260939514514750, guid: c02c6716803fe994a9b17299496c19b4, type: 3}
+      propertyPath: sprintPitchLow
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4667260939514514750, guid: c02c6716803fe994a9b17299496c19b4, type: 3}
+      propertyPath: sprintPitchHigh
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4667260939514514751, guid: c02c6716803fe994a9b17299496c19b4, type: 3}
       propertyPath: m_RootOrder
       value: 6
