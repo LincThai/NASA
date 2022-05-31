@@ -41,6 +41,8 @@ namespace NASAnalSpaceStation
                 s.source = gameObject.AddComponent<AudioSource>();
                 // assign the clip in the sound class to teh clip on the audiosource
                 s.source.clip = s.clip;
+                // assign the audiomixer to the audio source
+                s.source.outputAudioMixerGroup = s.mixerGroup;
 
                 // assign the pitch and volume in the audiosource the valu in the sound class
                 s.source.volume = s.volume;
@@ -90,6 +92,22 @@ namespace NASAnalSpaceStation
 
             // stop sound
             s.source.Stop();
+        }
+
+        public bool IsPlaying(string name)
+        {
+            // assign to s a sound with the same name, that was given to the function
+            Sound s = Array.Find(sounds, sound => sound.name == name);
+
+            // check if s is equal to null
+            if (s == null)
+            {
+                Debug.LogWarning("Sound: " + name + " not found!");
+                return false;
+            }
+
+            // stop sound
+            return s.source.isPlaying;
         }
 
         #endregion
