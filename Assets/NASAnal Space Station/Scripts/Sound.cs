@@ -27,6 +27,7 @@ namespace NASAnalSpaceStation
         [HideInInspector]
         public AudioSource source;
 
+        // AudioMixerGroup
         public AudioMixerGroup mixerGroup;
     }
 }

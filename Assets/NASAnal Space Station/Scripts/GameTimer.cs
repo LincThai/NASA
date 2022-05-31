@@ -33,15 +33,20 @@ namespace NASAnalSpaceStation
             // Start Timer Coroutine
             StartCoroutine(Timer());
 
+
+        }
+
+        private void Update()
+        {
             PlaySoundOverTime();
         }
 
 
-        #endregion
+            #endregion
 
-        #region Methods
+            #region Methods
 
-        public IEnumerator Timer()
+            public IEnumerator Timer()
         {
             // while currentTime is greater than 0 complete the following
             while (currentTime > 0)
@@ -56,16 +61,30 @@ namespace NASAnalSpaceStation
         {
             if (currentTime >= levelTimeLimit / 2 )
             {
-                FindObjectOfType<AudioManager>().Play("Alarm_02");
+                if (FindObjectOfType<AudioManager>().IsPlaying("Alarm_02") == false)
+                {
+                    FindObjectOfType<AudioManager>().Play("Alarm_02");
+                }
+
             }
-            else if (currentTime <= levelTimeLimit / 2)
+            else if (currentTime < levelTimeLimit / 2 && currentTime > 0)
             {
-                FindObjectOfType<AudioManager>().Stop("Alarm_02");
-                FindObjectOfType<AudioManager>().Play("Alarm_01");
+                if (FindObjectOfType<AudioManager>().IsPlaying("Alarm_02") == true)
+                {
+                    FindObjectOfType<AudioManager>().Stop("Alarm_02");
+                }
+                if (FindObjectOfType<AudioManager>().IsPlaying("Alarm_01") == false)
+                {
+                    FindObjectOfType<AudioManager>().Play("Alarm_01");
+                }
+
             }
             else if (currentTime <= 0)
             {
-                FindObjectOfType<AudioManager>().Stop("Alarm_01");
+                if (FindObjectOfType<AudioManager>().IsPlaying("Alarm_01") == true)
+                {
+                    FindObjectOfType<AudioManager>().Stop("Alarm_01");
+                }
             }
         }
 
