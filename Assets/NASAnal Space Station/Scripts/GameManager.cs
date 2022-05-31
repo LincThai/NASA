@@ -81,6 +81,12 @@ namespace NASAnalSpaceStation
             // checks gamestate
             if (gameState == GameState.dead)
             {
+                // save values
+                PlayerPrefs.SetFloat("remainingTime", timer.currentTime);
+                PlayerPrefs.SetInt("numSystemsRepaired", playerController.repairedSystems);
+                PlayerPrefs.SetInt("numberOfSystems", levelManager.numberOfSystems);
+
+                // load scene
                 SceneManager.LoadScene("GameEnd");
             }
         }

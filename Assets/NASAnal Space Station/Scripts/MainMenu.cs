@@ -12,8 +12,8 @@ namespace NASAnalSpaceStation
         public void PlayGame()
         {
             // load next scene
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            SceneManager.LoadScene("MainLevel_01");
             // set GameState to game
             //gameManager.gameState = GameState.game;
         }

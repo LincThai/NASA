@@ -19,6 +19,11 @@ namespace NASAnalSpaceStation
         public GameObject losePanel;
         public GameObject winPanel;
 
+        // variables for game end
+        int numSystemsRepaired;
+        float remainingTime;
+        int numberOfSystems;
+
         // reference to level manager
         LevelManager levelManager;
 
@@ -31,8 +36,9 @@ namespace NASAnalSpaceStation
         {
             Cursor.lockState = CursorLockMode.Confined;
 
-            // reference to LevelManager Script
-            levelManager = GameObject.FindGameObjectWithTag("LevelManager").GetComponent<LevelManager>();
+            remainingTime = PlayerPrefs.GetFloat("remainingTime");
+            numSystemsRepaired = PlayerPrefs.GetInt("numSystemsRepaired");
+            numberOfSystems = PlayerPrefs.GetInt("numberOfSystems");
 
             // Turn off win and lose panel
             losePanel.SetActive(false);
@@ -51,13 +57,13 @@ namespace NASAnalSpaceStation
 
         public void ChangeEndText()
         {
-            if (levelManager.numSystemsRepaired == levelManager.numberOfSystems)
+            if (numSystemsRepaired == numberOfSystems)
             {
                 winPanel.SetActive(true);
                 gameEndText.text = "You Win";
             }
 
-            else if (levelManager.remainingTime <= 0 && levelManager.numSystemsRepaired < levelManager.numberOfSystems)
+            else if (remainingTime <= 0 && numSystemsRepaired < numberOfSystems)
             {
                 losePanel.SetActive(true);
                 gameEndText.text = "You Lose";
