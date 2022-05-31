@@ -71,6 +71,15 @@ namespace NASAnalSpaceStation
         // number of systems to repair
         public int systemsToRepair;
 
+        [Header("Sound")]
+        // low and high range value walk
+        public float walkPitchLow = 0.9f;
+        public float walkPitchHigh = 1.5f;
+
+        // low and high range value sprint
+        public float sprintPitchLow = 1f;
+        public float sprintPitchHigh = 3f;
+
         #endregion
 
         #region Unity Methods
@@ -170,6 +179,11 @@ namespace NASAnalSpaceStation
 
             // call inventory
             Inventory();
+
+            if (moveDirection.x > 0 || moveDirection.z > 0)
+            {
+                PlayerMoveSFX();
+            }
         }
 
         private void FixedUpdate()
@@ -177,10 +191,6 @@ namespace NASAnalSpaceStation
             // call MovePlayer function
             MovePlayer();
 
-            if (moveDirection.x > 0 || moveDirection.z > 0)
-            {
-                PlayerMoveSFX();
-            }
         }
 
         #endregion
@@ -311,11 +321,21 @@ namespace NASAnalSpaceStation
         {
             if (isSprinting)
             {
-                FindObjectOfType<AudioManager>().Play("Sprint");
+                if (FindObjectOfType<AudioManager>().IsPlaying("Movement") == false)
+                {
+                    FindObjectOfType<AudioManager>().RandomPitch(sprintPitchLow, sprintPitchHigh, "Movement");
+
+                    FindObjectOfType<AudioManager>().Play("Movement");
+                }
             }
             else
             {
-                FindObjectOfType<AudioManager>().Play("Walk");
+                if (FindObjectOfType<AudioManager>().IsPlaying("Movement") == false)
+                {
+                    FindObjectOfType<AudioManager>().RandomPitch(walkPitchLow, walkPitchHigh, "Movement");
+
+                    FindObjectOfType<AudioManager>().Play("Movement");
+                }
             }
         }
 

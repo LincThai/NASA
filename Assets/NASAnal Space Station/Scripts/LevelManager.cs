@@ -27,6 +27,9 @@ namespace NASAnalSpaceStation
         {
             // get reference to game manager script
             gameManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
+            
+            // ensure this game object is not destroyed when loading new scenes
+            DontDestroyOnLoad(gameObject);
         }
 
         void Update()
@@ -34,9 +37,6 @@ namespace NASAnalSpaceStation
             // get data variables
             remainingTime = gameManager.timer.currentTime;
             numSystemsRepaired = gameManager.playerController.repairedSystems;
-
-            // ensure this game object is not destroyed when loading new scenes
-            DontDestroyOnLoad(gameObject);
         }
 
         #endregion

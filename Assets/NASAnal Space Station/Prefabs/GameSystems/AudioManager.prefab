@@ -50,53 +50,53 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     source: {fileID: 0}
-    mixerGroup: {fileID: 5851763439980152219, guid: f7ad11cae5b4145488fe45992c101fdb, type: 2}
+    mixerGroup: {fileID: -6623770269031438310, guid: f7ad11cae5b4145488fe45992c101fdb, type: 2}
   - name: Alarm_02
     clip: {fileID: 8300000, guid: a7f505690a1364740a05986412ba738e, type: 3}
     volume: 1
     pitch: 1
     loop: 1
     source: {fileID: 0}
-    mixerGroup: {fileID: 5851763439980152219, guid: f7ad11cae5b4145488fe45992c101fdb, type: 2}
+    mixerGroup: {fileID: -6623770269031438310, guid: f7ad11cae5b4145488fe45992c101fdb, type: 2}
   - name: Repaired_01
     clip: {fileID: 8300000, guid: 40c25c9f64cb1954790707b0915e8956, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
-    mixerGroup: {fileID: 5851763439980152219, guid: f7ad11cae5b4145488fe45992c101fdb, type: 2}
+    mixerGroup: {fileID: -5275323195237396891, guid: f7ad11cae5b4145488fe45992c101fdb, type: 2}
   - name: Repaired_02
     clip: {fileID: 8300000, guid: 1865fa1a7cc8b0e4fb6666e868133fb5, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
-    mixerGroup: {fileID: 5851763439980152219, guid: f7ad11cae5b4145488fe45992c101fdb, type: 2}
+    mixerGroup: {fileID: -5275323195237396891, guid: f7ad11cae5b4145488fe45992c101fdb, type: 2}
   - name: Restock
     clip: {fileID: 8300000, guid: 4af516284d35a7343b605dd5657987a1, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
-    mixerGroup: {fileID: 5851763439980152219, guid: f7ad11cae5b4145488fe45992c101fdb, type: 2}
+    mixerGroup: {fileID: -5275323195237396891, guid: f7ad11cae5b4145488fe45992c101fdb, type: 2}
   - name: Spark_01
     clip: {fileID: 0}
     volume: 0
-    pitch: 0
+    pitch: 0.1
     loop: 0
     source: {fileID: 0}
-    mixerGroup: {fileID: 0}
+    mixerGroup: {fileID: 464312111413544863, guid: f7ad11cae5b4145488fe45992c101fdb, type: 2}
   - name: Spark_02
     clip: {fileID: 0}
-    volume: 0
+    volume: 1
+    pitch: 0.1
+    loop: 0
+    source: {fileID: 0}
+    mixerGroup: {fileID: 464312111413544863, guid: f7ad11cae5b4145488fe45992c101fdb, type: 2}
+  - name: Movement
+    clip: {fileID: 8300000, guid: e615c329094c8ab4e942d18ea6f25d56, type: 3}
+    volume: 1
     pitch: 0
     loop: 0
     source: {fileID: 0}
-    mixerGroup: {fileID: 0}
-  - name: 
-    clip: {fileID: 0}
-    volume: 0
-    pitch: 0
-    loop: 0
-    source: {fileID: 0}
-    mixerGroup: {fileID: 0}
+    mixerGroup: {fileID: 5851763439980152219, guid: f7ad11cae5b4145488fe45992c101fdb, type: 2}

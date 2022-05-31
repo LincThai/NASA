@@ -594,14 +594,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 4667260939514514750, guid: c02c6716803fe994a9b17299496c19b4, type: 3}
-      propertyPath: walkSound
-      value: 
-      objectReference: {fileID: 8300000, guid: 1bf5ba2a0cb2f6c44b3dbbe6dc29bedd, type: 3}
-    - target: {fileID: 4667260939514514750, guid: c02c6716803fe994a9b17299496c19b4, type: 3}
-      propertyPath: sprintSound
-      value: 
-      objectReference: {fileID: 8300000, guid: a7f505690a1364740a05986412ba738e, type: 3}
     - target: {fileID: 4667260939514514751, guid: c02c6716803fe994a9b17299496c19b4, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -8778,7 +8770,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8289043417419253668, guid: 68473aa2771fe4f469a43ff5dac0e1e9, type: 3}
       propertyPath: levelTimeLimit
-      value: 120
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68473aa2771fe4f469a43ff5dac0e1e9, type: 3}
@@ -9032,26 +9024,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1103318598296100270, guid: 059952116b964554084fdb0943cdf885, type: 3}
-      propertyPath: sounds.Array.data[0].mixerGroup
-      value: 
-      objectReference: {fileID: 5851763439980152219, guid: f7ad11cae5b4145488fe45992c101fdb, type: 2}
-    - target: {fileID: 1103318598296100270, guid: 059952116b964554084fdb0943cdf885, type: 3}
-      propertyPath: sounds.Array.data[1].mixerGroup
-      value: 
-      objectReference: {fileID: 5851763439980152219, guid: f7ad11cae5b4145488fe45992c101fdb, type: 2}
-    - target: {fileID: 1103318598296100270, guid: 059952116b964554084fdb0943cdf885, type: 3}
-      propertyPath: sounds.Array.data[2].mixerGroup
-      value: 
-      objectReference: {fileID: 5851763439980152219, guid: f7ad11cae5b4145488fe45992c101fdb, type: 2}
-    - target: {fileID: 1103318598296100270, guid: 059952116b964554084fdb0943cdf885, type: 3}
-      propertyPath: sounds.Array.data[3].mixerGroup
-      value: 
-      objectReference: {fileID: 5851763439980152219, guid: f7ad11cae5b4145488fe45992c101fdb, type: 2}
-    - target: {fileID: 1103318598296100270, guid: 059952116b964554084fdb0943cdf885, type: 3}
-      propertyPath: sounds.Array.data[4].mixerGroup
-      value: 
-      objectReference: {fileID: 5851763439980152219, guid: f7ad11cae5b4145488fe45992c101fdb, type: 2}
     - target: {fileID: 1276333544507362023, guid: 059952116b964554084fdb0943cdf885, type: 3}
       propertyPath: m_RootOrder
       value: 0
