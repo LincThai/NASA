@@ -1,8 +1,10 @@
 namespace NASAnalSpaceStation
 {
     using System;
+
     using UnityEngine;
     using UnityEngine.Audio;
+    using Random = UnityEngine.Random;
 
     public class AudioManager : MonoBehaviour
     {
@@ -10,6 +12,7 @@ namespace NASAnalSpaceStation
 
         // set array
         public Sound[] sounds;
+
 
         // audioManager instance variable
         public static AudioManager instance;
@@ -108,6 +111,26 @@ namespace NASAnalSpaceStation
 
             // stop sound
             return s.source.isPlaying;
+        }
+
+        public float RandomPitch(float a, float b, string name)
+        {
+            // assign to s a sound with the same name, that was given to the function
+            Sound s = Array.Find(sounds, sound => sound.name == name);
+
+            // check if s is equal to null
+            if (s == null)
+            {
+                Debug.LogWarning("Sound: " + name + " not found!");
+                return 0;
+            }
+
+            float i = Random.Range(a, b);
+            
+            // assign random value to pitch
+            s.source.pitch = i;
+
+            return i;
         }
 
         #endregion

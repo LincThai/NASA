@@ -72,10 +72,15 @@ MonoBehaviour:
   sprintSpeed: 24
   walkSpeed: 12
   acceleration: 10
+  isSprinting: 0
   noToolKits: 2
   toolKitLimit: 2
   repairedSystems: 0
   systemsToRepair: 0
+  walkPitchLow: 0.9
+  walkPitchHigh: 1.5
+  sprintPitchLow: 1
+  sprintPitchHigh: 3
 --- !u!136 &4667260939514514748
 CapsuleCollider:
   m_ObjectHideFlags: 0
