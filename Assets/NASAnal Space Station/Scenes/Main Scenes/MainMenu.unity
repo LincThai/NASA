@@ -341,7 +341,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1015296510}
-        m_TargetAssemblyTypeName: NASAnalSpaceStation.UIManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: NASAnalSpaceStation.MainMenu, Assembly-CSharp
         m_MethodName: PlayGame
         m_Mode: 1
         m_Arguments:
