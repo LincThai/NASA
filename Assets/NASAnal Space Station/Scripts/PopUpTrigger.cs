@@ -3,13 +3,20 @@ namespace NASAnalSpaceStation
     using System.Collections;
     using System.Collections.Generic;
     using UnityEngine;
+    using TMPro;
 
     public class PopUpTrigger : MonoBehaviour
     {
         #region Fields
 
-        // reference to help text
-        public GameObject helpText;
+        // reference to bubble UI game object
+        public GameObject textBubble;
+
+        // text to write
+        public string popUpText;
+
+        // text to display
+        public TMP_Text textDisplay;
 
         #endregion
 
@@ -21,7 +28,10 @@ namespace NASAnalSpaceStation
             if (other.tag == "Player")
             {
                 // Turn on help text
-                helpText.SetActive(true);
+                textBubble.SetActive(true);
+
+                // change text
+                textDisplay.text = popUpText;
             }
         }
 
@@ -31,7 +41,7 @@ namespace NASAnalSpaceStation
             if (other.tag == "Player")
             {
                 // Turn off help text
-                helpText.SetActive(false);
+                textBubble.SetActive(false);
             }
         }
 
