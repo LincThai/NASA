@@ -44,7 +44,7 @@ namespace NASAnalSpaceStation
                 s.source = gameObject.AddComponent<AudioSource>();
                 // assign the clip in the sound class to teh clip on the audiosource
                 s.source.clip = s.clip;
-                // assign the audiomixer to the audio source
+                // assign the audiomixer group to the audio source
                 s.source.outputAudioMixerGroup = s.mixerGroup;
 
                 // assign the pitch and volume in the audiosource the valu in the sound class

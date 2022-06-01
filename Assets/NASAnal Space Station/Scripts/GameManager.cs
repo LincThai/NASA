@@ -35,7 +35,7 @@ namespace NASAnalSpaceStation
 
         public void setupManager()
         {
-            // set playerstate
+            // set playerstate and gamestate
             playerState = PlayerState.gravity;
             gameState = GameState.game;
 
@@ -47,8 +47,6 @@ namespace NASAnalSpaceStation
 
             // get reference to LevelManager script
             levelManager = GameObject.FindGameObjectWithTag("LevelManager").GetComponent<LevelManager>();
-
-
         }
 
         // Update is called once per frame

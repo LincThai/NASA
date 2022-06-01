@@ -9,7 +9,7 @@ namespace NASAnalSpaceStation
     {
         #region Fields
 
-        // bool to show weather game is paused or not
+        // bool to show whether game is paused or not
         public bool GameIsPaused = false;
 
         // reference to pause menu game object

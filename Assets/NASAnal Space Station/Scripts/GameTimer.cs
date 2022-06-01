@@ -27,7 +27,7 @@ namespace NASAnalSpaceStation
             // resets time for every level
             currentTime = levelTimeLimit;
   
-            // check if game state is game
+            // gets reference to game manager script
             gameManager = GetComponent<GameManager>();
             
             // Start Timer Coroutine

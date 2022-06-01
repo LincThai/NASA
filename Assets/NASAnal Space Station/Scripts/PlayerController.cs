@@ -18,6 +18,7 @@ namespace NASAnalSpaceStation
         public float rbDrag = 6f;
 
         [Header("Jump")]
+        // set the amount of force  for jump
         public float JumpForce = 5f;
 
         // set horizontal and vertical movement variables
@@ -182,6 +183,7 @@ namespace NASAnalSpaceStation
 
             if (moveDirection.x > 0 || moveDirection.z > 0)
             {
+                // call PlayerMoveSFX function
                 PlayerMoveSFX();
             }
         }
@@ -241,12 +243,14 @@ namespace NASAnalSpaceStation
             {
                 // accerlerate player movement speed to a sprint speed over time
                 moveSpeed = Mathf.Lerp(moveSpeed, sprintSpeed, acceleration * Time.deltaTime);
+                // set isSprinting to true
                 isSprinting = true;
             }
             else
             {
                 // deccelerate player movement speed to a walk speed over time
                 moveSpeed = Mathf.Lerp(moveSpeed, walkSpeed, acceleration * Time.deltaTime);
+                // set isSprinting to false
                 isSprinting = false;
             }
         }
@@ -319,21 +323,26 @@ namespace NASAnalSpaceStation
 
         public void PlayerMoveSFX()
         {
+            // checks if the player is sprinting or not
             if (isSprinting)
             {
+                // checks if sound is playing
                 if (FindObjectOfType<AudioManager>().IsPlaying("Movement") == false)
                 {
+                    // Uses RandomPitch function to randomise the pitch with the values for sprinting
                     FindObjectOfType<AudioManager>().RandomPitch(sprintPitchLow, sprintPitchHigh, "Movement");
-
+                    // plays the sound
                     FindObjectOfType<AudioManager>().Play("Movement");
                 }
             }
             else
             {
+                // checks if sound is playing
                 if (FindObjectOfType<AudioManager>().IsPlaying("Movement") == false)
                 {
+                    // Uses RandomPitch function to randomise the pitch with the values for walking
                     FindObjectOfType<AudioManager>().RandomPitch(walkPitchLow, walkPitchHigh, "Movement");
-
+                    // plays the sound
                     FindObjectOfType<AudioManager>().Play("Movement");
                 }
             }
