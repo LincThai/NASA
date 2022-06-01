@@ -180,11 +180,16 @@ namespace NASAnalSpaceStation
 
             // call inventory
             Inventory();
-
+            
+            // check if the player is moving on the x/z plane
             if (moveDirection.x > 0 || moveDirection.z > 0)
             {
-                // call PlayerMoveSFX function
-                PlayerMoveSFX();
+                // check if player isGrounded
+                if (isGrounded)
+                {
+                    // call PlayerMoveSFX function
+                    PlayerMoveSFX();
+                }
             }
         }
 
