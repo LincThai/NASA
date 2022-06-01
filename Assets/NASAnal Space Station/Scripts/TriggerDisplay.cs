@@ -32,8 +32,10 @@ public class TriggerDisplay : MonoBehaviour
 
     private void RedrawBox()
     {
+        // checks if there is a box collider
         if (bc != null)
         {
+            // set as trigger means isTrigger is true
             bc.isTrigger = true;
             Vector3 drawBoxScale = new Vector3(transform.lossyScale.x * bc.size.x, transform.lossyScale.y * bc.size.y, transform.lossyScale.z * bc.size.z);
             Vector3 tempScale = transform.worldToLocalMatrix.MultiplyPoint(transform.lossyScale);

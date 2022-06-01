@@ -27,6 +27,7 @@ namespace NASAnalSpaceStation
                 // check for the fire input button
                 if (Input.GetButtonDown("Fire1"))
                 {
+                    // play sound
                     FindObjectOfType<AudioManager>().Play("Restock");
 
                     // check if number of toolkits equals zero

@@ -3,6 +3,7 @@ namespace NASAnalSpaceStation
     using UnityEngine;
     using UnityEngine.Audio;
 
+    // shw in inspector
     [System.Serializable]
     public class Sound
     {
