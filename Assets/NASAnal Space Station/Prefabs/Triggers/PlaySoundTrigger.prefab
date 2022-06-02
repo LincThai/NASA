@@ -45,10 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3d88a7a93578de41b714aeba48c957a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name:
-  - Spark_01
-  - Spark_02
-  - Spark_03
+  soundNames: []
 --- !u!65 &4312085612478642395
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -74,5 +71,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 882357b32e1dc224a84b9edfc6af7e2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerColour: {r: 1, g: 0.95839036, b: 0, a: 0}
-  triggerWireColour: {r: 0, g: 0, b: 0, a: 0}
+  triggerColour: {r: 1, g: 0.9326619, b: 0, a: 1}
+  triggerWireColour: {r: 0, g: 0, b: 0, a: 1}
