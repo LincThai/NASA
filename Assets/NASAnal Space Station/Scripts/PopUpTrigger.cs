@@ -13,6 +13,7 @@ namespace NASAnalSpaceStation
         public GameObject textBubble;
 
         // text to write
+        [TextArea(5, 10)]
         public string popUpText;
 
         // text to display
