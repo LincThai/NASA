@@ -19,6 +19,9 @@ namespace NASAnalSpaceStation
         // text to display
         public TMP_Text textDisplay;
 
+        // bool to check if it is to be destroye
+        public bool isNotPermanant;
+
         #endregion
 
         #region Methods
@@ -43,6 +46,13 @@ namespace NASAnalSpaceStation
             {
                 // Turn off help text
                 textBubble.SetActive(false);
+
+                // if this trigger needs to be destroyed after use or not
+                if (isNotPermanant)
+                {
+                    // destroys this game object
+                    Destroy(gameObject);
+                }
             }
         }
 

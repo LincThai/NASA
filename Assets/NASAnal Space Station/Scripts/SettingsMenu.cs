@@ -75,18 +75,25 @@ namespace NASAnalSpaceStation
 
             // sets the resolution
             Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
+
+            PlayerPrefs.SetInt("ResIndex", resolutionIndex);
         }         
 
         public void SetVolume(float volume)
         {
             // edits the value of volume in the main mixer
             audioMixer.SetFloat("volume", volume);
+
+            // get value in player prefs
+            PlayerPrefs.SetFloat("Volume", volume);
         }
 
         public void SetQuality(int qualityIndex)
         {
             // Adjusts grphics quality
             QualitySettings.SetQualityLevel(qualityIndex);
+
+            PlayerPrefs.SetInt("Quality", qualityIndex);
         }
 
         public void SetFullscreen(bool isFullscreen)
