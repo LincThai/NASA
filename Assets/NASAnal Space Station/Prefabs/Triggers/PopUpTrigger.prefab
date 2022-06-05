@@ -58,7 +58,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b43daec015279904ea4034443b846970, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  helpText: {fileID: 0}
+  textBubble: {fileID: 0}
+  popUpText: Banananaaaa!!
+  textDisplay: {fileID: 0}
 --- !u!114 &3111113912958952092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71,5 +73,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 882357b32e1dc224a84b9edfc6af7e2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerColour: {r: 0, g: 0, b: 0, a: 0}
-  triggerWireColour: {r: 0, g: 0, b: 0, a: 0}
+  triggerColour: {r: 0, g: 0.79665923, b: 1, a: 0.8}
+  triggerWireColour: {r: 0, g: 0.22749758, b: 1, a: 1}
