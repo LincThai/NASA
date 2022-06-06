@@ -64,12 +64,27 @@ namespace NASAnalSpaceStation
             // revert to bool using intTobool function
             setFullscreen = intTobool(fullscreenStat);
 
-
+            // call RefreshMenu function
+            RefreshMenu();
         }
 
         #endregion
 
         #region Methods
+
+        public void RefreshMenu()
+        {
+            // assign values to sliders
+            volumeSlider.value = setVolume;
+            BGMSlider.value = setBGMvol;
+            SFXSlider.value = setSFXvol;
+
+            // assign toggle value
+            fullscreenToggle.isOn = setFullscreen;
+
+            // assign default value to quality
+
+        }
 
         public void SetupResArrayList()
         {
