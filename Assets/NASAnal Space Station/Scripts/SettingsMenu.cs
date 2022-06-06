@@ -56,9 +56,10 @@ namespace NASAnalSpaceStation
 
 
         }
-            #endregion
 
-            #region Methods
+        #endregion
+
+        #region Methods
 
         public void SetupResArrayList()
         {
