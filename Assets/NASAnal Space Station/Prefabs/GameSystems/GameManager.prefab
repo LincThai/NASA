@@ -47,6 +47,7 @@ MonoBehaviour:
   gameState: 0
   playerState: 0
   playerController: {fileID: 0}
+  player: {fileID: 0}
   timer: {fileID: 0}
   levelManager: {fileID: 0}
 --- !u!114 &8289043417419253668
@@ -62,4 +63,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentTime: 0
-  levelTimeLimit: 180
+  levelTimeLimit: 210

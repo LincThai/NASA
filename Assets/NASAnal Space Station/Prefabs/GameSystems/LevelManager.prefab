@@ -44,6 +44,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toolKitLimit: 2
-  numberOfSystems: 11
-  numSystemsRepaired: 0
-  remainingTime: 0
+  numberOfSystems: 15
