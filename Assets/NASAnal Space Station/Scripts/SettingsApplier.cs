@@ -26,6 +26,8 @@ namespace NASAnalSpaceStation
         // reference to0 audiomixer
         public AudioMixer audioMixer;
 
+        Resolution[] resolutions;
+
         #endregion
 
         #region Unity Methods
