@@ -28,6 +28,8 @@ namespace NASAnalSpaceStation
                 {
                     // play sound with the name in array through audiomanager
                     FindObjectOfType<AudioManager>().Play(soundNames[i]);
+
+                    Debug.Log(i);
                 }
             }
         }
