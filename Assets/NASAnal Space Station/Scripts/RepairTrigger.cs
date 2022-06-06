@@ -13,6 +13,11 @@ namespace NASAnalSpaceStation
         [Header("Lights")]
         public GameObject greenRepairedLight;
         public GameObject redBrokenLight;
+        public GameObject fixedPanel;
+        public GameObject brokenPanel;
+        public GameObject spark;
+        public GameObject sparkSounds; 
+
 
         // reference to player controller
         PlayerController playerController;
@@ -51,6 +56,11 @@ namespace NASAnalSpaceStation
                         // switch lights
                         redBrokenLight.SetActive(false);
                         greenRepairedLight.SetActive(true);
+                        
+                        Instantiate(fixedPanel, brokenPanel.transform.position, brokenPanel.transform.rotation);
+                        Destroy(brokenPanel);
+                        Destroy(spark);
+                        Destroy(sparkSounds);
 
                         // increase the number of repaired systems by 1
                         playerController.repairedSystems += 1;

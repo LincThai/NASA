@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1928820127}
   - component: {fileID: 1928820126}
   m_Layer: 0
-  m_Name: Particle System
+  m_Name: Smoke_Bomb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -975,7 +975,7 @@ ParticleSystem:
       countCurve:
         serializedVersion: 2
         minMaxState: 0
-        scalar: 10
+        scalar: 5
         minScalar: 30
         maxCurve:
           serializedVersion: 2
@@ -19333,6 +19333,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2906925481996759823, guid: 10bd2b3271bd0454a8802507db0961ab, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2906925481996759823, guid: 10bd2b3271bd0454a8802507db0961ab, type: 3}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[1].time
+      value: 0.70082927
+      objectReference: {fileID: 0}
+    - target: {fileID: 2906925481996759823, guid: 10bd2b3271bd0454a8802507db0961ab, type: 3}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[1].value
+      value: 0.14864863
+      objectReference: {fileID: 0}
     - target: {fileID: 2906925481996760049, guid: 10bd2b3271bd0454a8802507db0961ab, type: 3}
       propertyPath: m_Name
       value: LongRangeSparks
@@ -19481,6 +19493,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Smoke
       objectReference: {fileID: 0}
+    - target: {fileID: 9197991712245230884, guid: bc22b6d251fe19e4592f1e9e589a886f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc22b6d251fe19e4592f1e9e589a886f, type: 3}
 --- !u!4 &1636494800018248505 stripped
@@ -19498,6 +19514,10 @@ PrefabInstance:
     - target: {fileID: 2387361296477067947, guid: 585caaf73680b1d4f85ed1a4166b8df6, type: 3}
       propertyPath: m_Name
       value: Smoke_Fade
+      objectReference: {fileID: 0}
+    - target: {fileID: 2387361296477067947, guid: 585caaf73680b1d4f85ed1a4166b8df6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3109238665462618972, guid: 585caaf73680b1d4f85ed1a4166b8df6, type: 3}
       propertyPath: m_RootOrder

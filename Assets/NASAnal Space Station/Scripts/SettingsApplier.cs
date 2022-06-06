@@ -31,9 +31,7 @@ namespace NASAnalSpaceStation
         // reference to0 audiomixer
         public AudioMixer audioMixer;
 
-        // array of resolutions for the platform
         Resolution[] resolutions;
-
 
         #endregion
 
