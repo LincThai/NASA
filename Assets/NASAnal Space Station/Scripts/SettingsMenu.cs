@@ -20,11 +20,48 @@ namespace NASAnalSpaceStation
         // array of resolutions for the platform
         Resolution[] resolutions;
 
+        // variables to store settings values
+        // other settings
+        int setResIndex;
+        int setQualityIndex;
+        bool setFullscreen;
+
+        // volume settings
+        float setVolume;
+        float setBGMvol;
+        float setSFXvol;
+
+        // int for fullscreen
+        int fullscreenStat;
+
         #endregion
 
         #region Unity Methods
 
         void Start()
+        {
+            // Call function to setup arrays/lists
+            SetupResArrayList();
+
+            // set values
+            PlayerPrefs.GetInt("ResIndex", setResIndex);
+            PlayerPrefs.GetInt("Quality", setQualityIndex);
+            PlayerPrefs.GetFloat("volume", setVolume);
+            PlayerPrefs.GetFloat("BGMvolume", setBGMvol);
+            PlayerPrefs.GetFloat("SFXvolume", setSFXvol);
+            PlayerPrefs.GetInt("FullscreenStat", fullscreenStat);
+
+            // revert to bool using intTobool function
+            setFullscreen = intTobool(fullscreenStat);
+
+
+        }
+
+        #endregion
+
+        #region Methods
+
+        public void SetupResArrayList()
         {
             // collect resolution option in list/array
             resolutions = Screen.resolutions;
@@ -63,10 +100,6 @@ namespace NASAnalSpaceStation
             // refreshes the value displayes
             resolutionDropdown.RefreshShownValue();
         }
-
-        #endregion
-
-        #region Methods
 
         public void SetResolution(int resolutionIndex)
         {
@@ -120,12 +153,39 @@ namespace NASAnalSpaceStation
         {
             // turns on or off fullscreen
             Screen.fullScreen = isFullscreen;
+
+            // save value in player prefs as an int using boolToint function
+            PlayerPrefs.SetInt("fullscreenStat", boolToint(isFullscreen));
         }
 
         public void ReturnToPriorScene()
         {
             // Loads MainMenu Scene
             SceneManager.LoadScene("MainMenu");
+        }
+
+        int boolToint(bool val)
+        {
+            if (val)
+            {
+                return 1;
+            }
+            else
+            {
+                return 0;
+            }
+        }
+
+        bool intTobool(int val)
+        {
+            if (val != 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         #endregion
