@@ -92,6 +92,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 82326595501aa484aa01bc4160833413, type: 3}
+--- !u!1 &7260105661308315833 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8008200269233428884, guid: 82326595501aa484aa01bc4160833413, type: 3}
+  m_PrefabInstance: {fileID: 856743949405860141}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4098666725726097400 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3675684684405358293, guid: 82326595501aa484aa01bc4160833413, type: 3}
@@ -158,6 +163,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4195b2364c153ae4891621b0cb7e0e27, type: 3}
+--- !u!1 &2115509659965620844 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 4195b2364c153ae4891621b0cb7e0e27, type: 3}
+  m_PrefabInstance: {fileID: 1268507673824182077}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1589802001650735318 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4195b2364c153ae4891621b0cb7e0e27, type: 3}
@@ -220,6 +230,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60f751a57a9b1f943a775384d402d3c5, type: 3}
+--- !u!1 &875900323574641481 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2272994961353439398, guid: 60f751a57a9b1f943a775384d402d3c5, type: 3}
+  m_PrefabInstance: {fileID: 1417682168383638511}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &21766710886553784 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1432649213673198423, guid: 60f751a57a9b1f943a775384d402d3c5, type: 3}
@@ -232,6 +247,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6423398305341787023}
     m_Modifications:
+    - target: {fileID: 4323041043842890262, guid: d29bb36f3548f0b4db2e34277ba784a4, type: 3}
+      propertyPath: Spark
+      value: 
+      objectReference: {fileID: 7260105661308315833}
+    - target: {fileID: 4323041043842890262, guid: d29bb36f3548f0b4db2e34277ba784a4, type: 3}
+      propertyPath: spark
+      value: 
+      objectReference: {fileID: 7260105661308315833}
+    - target: {fileID: 4323041043842890262, guid: d29bb36f3548f0b4db2e34277ba784a4, type: 3}
+      propertyPath: FixedPanel
+      value: 
+      objectReference: {fileID: 1162760147088473058, guid: e818778aeb2d4ba4798f77c7bda3997b, type: 3}
+    - target: {fileID: 4323041043842890262, guid: d29bb36f3548f0b4db2e34277ba784a4, type: 3}
+      propertyPath: fixedPanel
+      value: 
+      objectReference: {fileID: 1162760147088473058, guid: e818778aeb2d4ba4798f77c7bda3997b, type: 3}
+    - target: {fileID: 4323041043842890262, guid: d29bb36f3548f0b4db2e34277ba784a4, type: 3}
+      propertyPath: BrokenPanel
+      value: 
+      objectReference: {fileID: 2115509659965620844}
+    - target: {fileID: 4323041043842890262, guid: d29bb36f3548f0b4db2e34277ba784a4, type: 3}
+      propertyPath: brokenPanel
+      value: 
+      objectReference: {fileID: 2115509659965620844}
+    - target: {fileID: 4323041043842890262, guid: d29bb36f3548f0b4db2e34277ba784a4, type: 3}
+      propertyPath: sparkSounds
+      value: 
+      objectReference: {fileID: 875900323574641481}
     - target: {fileID: 4323041043842890262, guid: d29bb36f3548f0b4db2e34277ba784a4, type: 3}
       propertyPath: redBrokenLight
       value: 
