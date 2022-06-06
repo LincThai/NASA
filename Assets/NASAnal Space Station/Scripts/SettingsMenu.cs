@@ -5,6 +5,7 @@ namespace NASAnalSpaceStation
     using UnityEngine;
     using UnityEngine.Audio;
     using UnityEngine.SceneManagement;
+    using UnityEngine.UI;
     using TMPro;
 
     public class SettingsMenu : MonoBehaviour
@@ -16,6 +17,15 @@ namespace NASAnalSpaceStation
 
         // reference to dropdown menu
         public TMP_Dropdown resolutionDropdown;
+        // reference
+        public TMP_Dropdown qualityDropdown;
+        // reference to toggle
+        public Toggle fullscreenToggle;
+        // reference volume sliders
+        public Slider volumeSlider;
+        public Slider BGMSlider;
+        public Slider SFXSlider;
+        
 
         // array of resolutions for the platform
         Resolution[] resolutions;
@@ -142,7 +152,7 @@ namespace NASAnalSpaceStation
 
         public void SetQuality(int qualityIndex)
         {
-            // Adjusts grphics quality
+            // Adjusts graphics quality
             QualitySettings.SetQualityLevel(qualityIndex);
 
             // store value ion player prefs
