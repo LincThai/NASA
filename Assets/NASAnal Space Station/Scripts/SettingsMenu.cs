@@ -76,16 +76,35 @@ namespace NASAnalSpaceStation
             // sets the resolution
             Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
 
+            // store value ion player prefs
             PlayerPrefs.SetInt("ResIndex", resolutionIndex);
         }         
 
         public void SetVolume(float volume)
         {
-            // edits the value of volume in the main mixer
+            // edits the value of volume in the main mixer e.g Master
             audioMixer.SetFloat("volume", volume);
 
-            // get value in player prefs
+            // store value in player prefs
             PlayerPrefs.SetFloat("Volume", volume);
+        }
+
+        public void SetBGMVolume(float volume)
+        {
+            // edits the value of volume for BGM in mainh mixer
+            audioMixer.SetFloat("BGMvolume", volume);
+
+            // store value in player prefs
+            PlayerPrefs.SetFloat("BGMvolume", volume);
+        }
+
+        public void SetSFXVolume(float volume)
+        {
+            // edits the value of volume for SFX in mainh mixer
+            audioMixer.SetFloat("SFXvolume", volume);
+
+            // store value in player prefs
+            PlayerPrefs.SetFloat("SFXvolume", volume);
         }
 
         public void SetQuality(int qualityIndex)
@@ -93,6 +112,7 @@ namespace NASAnalSpaceStation
             // Adjusts grphics quality
             QualitySettings.SetQualityLevel(qualityIndex);
 
+            // store value ion player prefs
             PlayerPrefs.SetInt("Quality", qualityIndex);
         }
 
