@@ -12,12 +12,12 @@ namespace NASAnalSpaceStation
         // reference to bubble UI game object
         public GameObject textBubble;
 
+        // text to display
+        public TMP_Text textDisplay;
+
         // text to write
         [TextArea(5, 10)]
         public string popUpText;
-
-        // text to display
-        public TMP_Text textDisplay;
 
         // bool to check if it is to be destroye
         public bool isNotPermanant;
