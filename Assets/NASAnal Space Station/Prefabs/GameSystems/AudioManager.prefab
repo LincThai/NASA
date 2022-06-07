@@ -100,3 +100,10 @@ MonoBehaviour:
     loop: 0
     source: {fileID: 0}
     mixerGroup: {fileID: 1751497652414036885, guid: f7ad11cae5b4145488fe45992c101fdb, type: 2}
+  - name: BGM
+    clip: {fileID: 8300000, guid: 85a92ae04a3bff54eacdcdb0475d7ded, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+    mixerGroup: {fileID: -4523678439092491081, guid: f7ad11cae5b4145488fe45992c101fdb, type: 2}

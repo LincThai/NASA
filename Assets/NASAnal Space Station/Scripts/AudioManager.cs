@@ -58,7 +58,8 @@ namespace NASAnalSpaceStation
 
         void Start()
         {
-            //Play();
+            // Play BGM
+            Play("BGM");
         }
 
         #endregion

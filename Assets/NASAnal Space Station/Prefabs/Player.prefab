@@ -76,7 +76,7 @@ MonoBehaviour:
   noToolKits: 2
   toolKitLimit: 2
   repairedSystems: 0
-  systemsToRepair: 1
+  systemsToRepair: 15
   walkPitchLow: 0.5
   walkPitchHigh: 0.6
   sprintPitchLow: 0.9
