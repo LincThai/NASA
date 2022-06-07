@@ -54,15 +54,16 @@ namespace NASAnalSpaceStation
             SetupResArrayList();
 
             // set values
-            PlayerPrefs.GetInt("ResIndex", setResIndex);
-            PlayerPrefs.GetInt("Quality", setQualityIndex);
-            PlayerPrefs.GetFloat("volume", setVolume);
-            PlayerPrefs.GetFloat("BGMvolume", setBGMvol);
-            PlayerPrefs.GetFloat("SFXvolume", setSFXvol);
-            PlayerPrefs.GetInt("FullscreenStat", fullscreenStat);
+            setQualityIndex = PlayerPrefs.GetInt("Quality");
+            setVolume = PlayerPrefs.GetFloat("volume");
+            setBGMvol = PlayerPrefs.GetFloat("BGMvolume");
+            setSFXvol = PlayerPrefs.GetFloat("SFXvolume");
+            fullscreenStat = PlayerPrefs.GetInt("FullscreenStat");
 
             // revert to bool using intTobool function
             setFullscreen = intTobool(fullscreenStat);
+
+            //Debug.Log()
 
             // call RefreshMenu function
             RefreshMenu();
@@ -83,7 +84,7 @@ namespace NASAnalSpaceStation
             fullscreenToggle.isOn = setFullscreen;
 
             // assign default value to quality
-
+            qualityDropdown.value = setQualityIndex;
         }
 
         public void SetupResArrayList()
@@ -144,7 +145,7 @@ namespace NASAnalSpaceStation
             audioMixer.SetFloat("volume", volume);
 
             // store value in player prefs
-            PlayerPrefs.SetFloat("Volume", volume);
+            PlayerPrefs.SetFloat("volume", volume);
         }
 
         public void SetBGMVolume(float volume)
