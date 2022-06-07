@@ -33,22 +33,6 @@ namespace NASAnalSpaceStation
             setupManager();
         }
 
-        public void setupManager()
-        {
-            // set playerstate and gamestate
-            playerState = PlayerState.gravity;
-            gameState = GameState.game;
-
-            // get reference to player controller script
-            playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
-
-            // get reference timer script
-            timer = gameObject.GetComponent<GameTimer>();
-
-            // get reference to LevelManager script
-            levelManager = GameObject.FindGameObjectWithTag("LevelManager").GetComponent<LevelManager>();
-        }
-
         // Update is called once per frame
         void Update()
         {
@@ -90,6 +74,23 @@ namespace NASAnalSpaceStation
         }
 
         #endregion
+
+        public void setupManager()
+        {
+            // set playerstate and gamestate
+            playerState = PlayerState.gravity;
+            gameState = GameState.game;
+
+            // get reference to player controller script
+            playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+
+            // get reference timer script
+            timer = gameObject.GetComponent<GameTimer>();
+
+            // get reference to LevelManager script
+            levelManager = GameObject.FindGameObjectWithTag("LevelManager").GetComponent<LevelManager>();
+        }
+
     }
     public enum GameState { preGame, game, dead, pause }
     public enum PlayerState { gravity , zeroGravity }

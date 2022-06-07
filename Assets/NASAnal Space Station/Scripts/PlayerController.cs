@@ -105,6 +105,9 @@ namespace NASAnalSpaceStation
             // set origin height to the height of the capsule collider
             originHeight = playerCol.height;
 
+            // call the setupManager function from game manager
+            gameManager.setupManager();
+
             // call GameSetup
             GameSetup();
 
@@ -114,7 +117,6 @@ namespace NASAnalSpaceStation
             // call ResetInventory
             ResetInventory();
 
-            gameManager.setupManager();
         }
 
         private void Update()
