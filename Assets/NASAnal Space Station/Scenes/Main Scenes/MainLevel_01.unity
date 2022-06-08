@@ -3954,6 +3954,10 @@ PrefabInstance:
       propertyPath: textDisplay
       value: 
       objectReference: {fileID: 1586426268}
+    - target: {fileID: 1774001333227894388, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
+      propertyPath: isNotPermanant
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1774001333227894389, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
       propertyPath: m_Size.x
       value: 5
@@ -4283,6 +4287,10 @@ PrefabInstance:
       propertyPath: textDisplay
       value: 
       objectReference: {fileID: 1586426268}
+    - target: {fileID: 1774001333227894388, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
+      propertyPath: isNotPermanant
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1774001333227894389, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
       propertyPath: m_Size.x
       value: 5
@@ -9226,6 +9234,10 @@ PrefabInstance:
       propertyPath: textDisplay
       value: 
       objectReference: {fileID: 1586426268}
+    - target: {fileID: 1774001333227894388, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
+      propertyPath: isNotPermanant
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1774001333227894389, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
       propertyPath: m_Size.x
       value: 5
