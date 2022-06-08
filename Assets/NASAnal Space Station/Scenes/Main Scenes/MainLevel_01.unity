@@ -3032,6 +3032,88 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 680509970}
   m_CullTransparentMesh: 1
+--- !u!1001 &682167126
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1774001333227894379, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
+      propertyPath: m_Name
+      value: PopUpTrigger (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774001333227894388, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
+      propertyPath: popUpText
+      value: God why did I forget the map and why did they make this space station
+        like a maze?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774001333227894388, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
+      propertyPath: textBubble
+      value: 
+      objectReference: {fileID: 1976565933}
+    - target: {fileID: 1774001333227894388, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
+      propertyPath: textDisplay
+      value: 
+      objectReference: {fileID: 1586426268}
+    - target: {fileID: 1774001333227894389, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
+      propertyPath: m_Size.x
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774001333227894389, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
+      propertyPath: m_Size.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774001333227894389, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
+      propertyPath: m_Size.z
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774001333227894390, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774001333227894390, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 29.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774001333227894390, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774001333227894390, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 13.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774001333227894390, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774001333227894390, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774001333227894390, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774001333227894390, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774001333227894390, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774001333227894390, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774001333227894390, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
 --- !u!1 &690408813 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8255937131077277537, guid: a2595a232fc145548a2ebc1573e3f8ae, type: 3}
@@ -3113,6 +3195,88 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af0a63eb721f6dd41b80916e5c9ada5c, type: 3}
+--- !u!1001 &706146477
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1774001333227894379, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
+      propertyPath: m_Name
+      value: PopUpTrigger (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774001333227894388, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
+      propertyPath: popUpText
+      value: Why can I only carry 2 sets of tools and components? this would be much
+        easier if i could carry more.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774001333227894388, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
+      propertyPath: textBubble
+      value: 
+      objectReference: {fileID: 1976565933}
+    - target: {fileID: 1774001333227894388, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
+      propertyPath: textDisplay
+      value: 
+      objectReference: {fileID: 1586426268}
+    - target: {fileID: 1774001333227894389, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
+      propertyPath: m_Size.x
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774001333227894389, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
+      propertyPath: m_Size.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774001333227894389, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
+      propertyPath: m_Size.z
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774001333227894390, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774001333227894390, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 63.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774001333227894390, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774001333227894390, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 13.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774001333227894390, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774001333227894390, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774001333227894390, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774001333227894390, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774001333227894390, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774001333227894390, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774001333227894390, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
 --- !u!4 &720081103 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5594664693089516049, guid: 5c08bcaf3d00eb543b6d2a3278e68284, type: 3}
@@ -3780,7 +3944,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1774001333227894388, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
       propertyPath: popUpText
-      value: Let's see how do i fix this again? Oh just (RMB) to repair
+      value: Let's see how do I fix this again? Oh! just (RMB) to repair it.
       objectReference: {fileID: 0}
     - target: {fileID: 1774001333227894388, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
       propertyPath: textBubble
@@ -4109,7 +4273,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1774001333227894388, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
       propertyPath: popUpText
-      value: Let's see how do i fix this again? Oh just (RMB) to repair
+      value: Let's see how do I fix this again? Oh! just (RMB) to repair it.
       objectReference: {fileID: 0}
     - target: {fileID: 1774001333227894388, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
       propertyPath: textBubble
@@ -7786,6 +7950,87 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e704be35a1c61e47bb509ab83fd64eb, type: 3}
+--- !u!1001 &1673824261
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1774001333227894379, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
+      propertyPath: m_Name
+      value: PopUpTrigger (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774001333227894388, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
+      propertyPath: popUpText
+      value: This alarm is so annoying why can't I just turn it off.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774001333227894388, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
+      propertyPath: textBubble
+      value: 
+      objectReference: {fileID: 1976565933}
+    - target: {fileID: 1774001333227894388, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
+      propertyPath: textDisplay
+      value: 
+      objectReference: {fileID: 1586426268}
+    - target: {fileID: 1774001333227894389, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
+      propertyPath: m_Size.x
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774001333227894389, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
+      propertyPath: m_Size.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774001333227894389, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
+      propertyPath: m_Size.z
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774001333227894390, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774001333227894390, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 27.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774001333227894390, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774001333227894390, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 56.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774001333227894390, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774001333227894390, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774001333227894390, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774001333227894390, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774001333227894390, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774001333227894390, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774001333227894390, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
 --- !u!4 &1691757120 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5594664693089516049, guid: 5c08bcaf3d00eb543b6d2a3278e68284, type: 3}
@@ -8970,8 +9215,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1774001333227894388, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
       propertyPath: popUpText
-      value: How do i get my tools again? Ah just press (RMB) the button in it cfomes
-        out
+      value: How do I get my tools again? Ah! just press (RMB) the button in it comes
+        out.
       objectReference: {fileID: 0}
     - target: {fileID: 1774001333227894388, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
       propertyPath: textBubble
@@ -9710,41 +9955,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 11190625}
     m_Modifications:
-    - target: {fileID: 467486687, guid: ebe24d6421dfbb64dbe056ea586ccba8, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 467486687, guid: ebe24d6421dfbb64dbe056ea586ccba8, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 467486687, guid: ebe24d6421dfbb64dbe056ea586ccba8, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 467486687, guid: ebe24d6421dfbb64dbe056ea586ccba8, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 467486687, guid: ebe24d6421dfbb64dbe056ea586ccba8, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1560139956865139630, guid: ebe24d6421dfbb64dbe056ea586ccba8, type: 3}
       propertyPath: m_Name
       value: GameHUD
-      objectReference: {fileID: 0}
-    - target: {fileID: 6089558825447653279, guid: ebe24d6421dfbb64dbe056ea586ccba8, type: 3}
-      propertyPath: m_text
-      value: ITS MORBIN TIME
-      objectReference: {fileID: 0}
-    - target: {fileID: 6089558825447653279, guid: ebe24d6421dfbb64dbe056ea586ccba8, type: 3}
-      propertyPath: m_fontSize
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 6089558825447653279, guid: ebe24d6421dfbb64dbe056ea586ccba8, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7611554116330723969, guid: ebe24d6421dfbb64dbe056ea586ccba8, type: 3}
       propertyPath: m_Pivot.x

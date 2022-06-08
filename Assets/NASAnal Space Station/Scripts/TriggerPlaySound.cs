@@ -11,8 +11,6 @@ namespace NASAnalSpaceStation
         // set string array
         public string[] soundNames;
 
- 
-
         #endregion
 
         #region Methods
