@@ -47,6 +47,8 @@ namespace NASAnalSpaceStation
                 // check for bfire button imput
                 if (Input.GetButtonDown("Fire1"))
                 {
+                    //Debug.Log("Player pressed Left Mouse Button.");
+
                     // check for that the number of tookits is greater than cost
                     if (playerController.noToolKits >= cost)
                     {

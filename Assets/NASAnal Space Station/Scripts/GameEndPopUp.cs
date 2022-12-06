@@ -33,6 +33,7 @@ namespace NASAnalSpaceStation
         {
             // unlocks the cursor to allow player access to buttons
             Cursor.lockState = CursorLockMode.Confined;
+            Cursor.visible = true;
 
             // access values saved in player prefs under the following names
             // and assign them to thr following variables

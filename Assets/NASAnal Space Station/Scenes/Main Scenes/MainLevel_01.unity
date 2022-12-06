@@ -1072,7 +1072,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4667260939514514751, guid: c02c6716803fe994a9b17299496c19b4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.06
+      value: 22.3
       objectReference: {fileID: 0}
     - target: {fileID: 4667260939514514751, guid: c02c6716803fe994a9b17299496c19b4, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1488,6 +1488,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1795584317}
     m_Modifications:
+    - target: {fileID: 4382162649613463800, guid: af0a63eb721f6dd41b80916e5c9ada5c, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4567262096050237213, guid: af0a63eb721f6dd41b80916e5c9ada5c, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5940157840790262069, guid: af0a63eb721f6dd41b80916e5c9ada5c, type: 3}
       propertyPath: m_Name
       value: Joe_s_SpaceStation_ModKit_Obj_Panel_02 (1)
@@ -3208,8 +3216,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1774001333227894388, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
       propertyPath: popUpText
-      value: Why can I only carry 2 sets of tools and components? this would be much
-        easier if i could carry more.
+      value: Why can I only carry 2 sets of tools and components?  This would be
+        much easier if i could carry more.
       objectReference: {fileID: 0}
     - target: {fileID: 1774001333227894388, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
       propertyPath: textBubble
@@ -3944,7 +3952,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1774001333227894388, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
       propertyPath: popUpText
-      value: Let's see how do I fix this again? Oh! just (RMB) to repair it.
+      value: Let's see how do I fix this again?  Oh!  Click (LMB) to repair it.
       objectReference: {fileID: 0}
     - target: {fileID: 1774001333227894388, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
       propertyPath: textBubble
@@ -7971,7 +7979,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1774001333227894388, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
       propertyPath: popUpText
-      value: This alarm is so annoying why can't I just turn it off.
+      value: This alarm is so annoying why can't I just turn it off?
       objectReference: {fileID: 0}
     - target: {fileID: 1774001333227894388, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
       propertyPath: textBubble
@@ -9223,8 +9231,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1774001333227894388, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
       propertyPath: popUpText
-      value: How do I get my tools again? Ah! just press (RMB) the button in it comes
-        out.
+      value: How do I get my tools again?  Ah!  Press (LMB) to refill your toolkit.
       objectReference: {fileID: 0}
     - target: {fileID: 1774001333227894388, guid: 8d97e185259d0ab4c80f50c426c9dad3, type: 3}
       propertyPath: textBubble

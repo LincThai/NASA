@@ -27,16 +27,26 @@ namespace NASAnalSpaceStation
         // Start is called before the first frame update
         void Start()
         {
-            // Locks cursor to center of screen and hides
-            Cursor.lockState = CursorLockMode.Locked;
+            LockMouseCursor();
 
             // get reference the game manager script via the object tagged "GameController"
             gameManager = GameObject.FindWithTag("GameController").GetComponent<GameManager>();
         }
 
+
+        void LockMouseCursor()
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
+
+
         // Update is called once per frame
         void Update()
         {
+
+            LockMouseCursor();
+
             // Get Mouse Movement Input multiply by sensitivity and time
             float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * 2 * Time.deltaTime;
             float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * 2 * Time.deltaTime;
@@ -61,14 +71,15 @@ namespace NASAnalSpaceStation
             // check if game state is pause
             if (gameManager.gameState == GameState.pause)
             {
+                //Debug.Log("Show mouse cursor.");
                 // confines cursor to window/screem
                 Cursor.lockState = CursorLockMode.Confined;
+                Cursor.visible = true;
             }
             // otherwise check game state is game
             else if (gameManager.gameState == GameState.game)
             {
-                // Locks cursor to center of screen and hides
-                Cursor.lockState = CursorLockMode.Locked;
+                LockMouseCursor();
             }
         }
 
